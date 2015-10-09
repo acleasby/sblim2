@@ -1,0 +1,13 @@
+cim.CIMVersionTest
+! testcases.parser.txt
+! testcases.cim.txt
+! testcases.slp.txt
+! testcases.discovery.txt
+! testcases.util.txt
+! testcases.wbem.txt
+http.SSLConfigurationTest
+cimxml.CimXmlSerializerTest
+http.HttpClientTest
+http.HttpHeaderTest
+http.HttpChallengeTest
+logging.LogAndTraceBrokerTest

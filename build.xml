@@ -1,0 +1,382 @@
+<!--
+  build.xml
+ 
+  (C) Copyright IBM Corp. 2005, 2013
+ 
+  THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE 
+  ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE 
+  CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+ 
+  You can obtain a current copy of the Eclipse Public License from
+  http://www.opensource.org/licenses/eclipse-1.0.php
+ 
+  Author:           Alexander Wolf-Reber, IBM, a.wolf-reber@de.ibm.com  
+  
+  Contributors:     Wolfgang Taphorn, IBM, taphorn@de.ibm.com
+  					Thorsten Schaefer, IBM, thschaef@de.ibm.com
+  					Ramandeep S Arora, IBM, arorar@us.ibm.com
+ -->
+
+
+<project name="SBLIM CIM Client for Java" default="all" basedir=".">
+
+    <description>
+        This is the Apache Ant build file of the SBLIM CIM Client for Java.
+        The targets of this file can be used to build the SBLIM CIM Client for 
+    	Java. The output from the build process can then be packaged into a 
+    	Java Archive (JAR file). Also a target to compose Javadoc is available.
+        Additional to that, binary, source and documentation release archives 
+        (Zip and/or Tar) can be created.
+    </description>
+
+    <!-- set global properties for this build -->
+    <property environment="env" />
+
+    <property name="Base.copyright" value="Copyright (C) IBM Corp. 2005, 2013" />
+    <property name="Manifest.name" value="SBLIM CIM Client for Java" />
+    <property name="Manifest.title" value="SBLIM CIM Client for Java" />
+    <property name="Manifest.vendor" value="IBM Corporation 2005, 2013" />
+    <property name="Manifest.version" value="2.2.5" />
+
+    <property name="Directory.source.core" value="${basedir}/src" />
+    <property name="Directory.source.samples" value="${basedir}/smpl" />
+    <property name="Directory.source.unittest" value="${basedir}/utst" />
+	
+    <property name="Directory.build.base" value="${basedir}/build" />
+    <property name="Directory.build.lib" value="${Directory.build.base}/lib" />
+    <property name="Directory.build.core" value="${Directory.build.base}/core" />
+    <property name="Directory.build.samples" value="${Directory.build.base}/samples" />
+    <property name="Directory.build.unittest" value="${Directory.build.base}/unittest" />
+    <property name="Directory.build.doc" value="${Directory.build.base}/doc" />
+	
+    <property name="Directory.package" value="sblim-cim-client2-${Manifest.version}" />
+
+    <property name="Filename.jar.cim" value="sblim-cim-client2-${Manifest.version}.jar" />
+
+    <target name="help" description="Display message eplaining the functionality 
+                                     of each target.">
+
+        <echo message="SBLIM CIM Client for Java - build.xml" />
+        <echo message="=====================================" />
+        <echo />
+        <echo message="  ant clean         - Cleans up the directory structure" />
+        <echo />
+        <echo message="  ant build_core    - Builds the SBLIM CIM Client core classes" />
+        <echo />
+        <echo message="  ant build_utst    - Builds the SBLIM CIM Client unit tests" />
+        <echo />
+        <echo message="  ant build_smpl    - Builds the SBLIM CIM Client samples" />
+        <echo />
+        <echo message="  ant package       - Builds the JAR files" />
+        <echo />
+        <echo message="  ant java-doc      - Composes the JavaDoc for the SBLIM CIM Client" />
+        <echo />
+        <echo message="  ant release       - Builds release TAR balls and Zip archives" />
+        <echo />
+        <echo message="  ant unittest      - Executes the unit tests" />
+        <echo />
+        <echo message="  ant all           - Build release archives and executes the unit tests" />
+        <echo />
+        <echo message="  ant cvs-update    - Performs a 'cvs update -AdP' on the project"/>
+        <echo />
+        <echo message="  ant help          - Displays this message" />
+    </target>
+
+
+    <target name="clean" description="Deletes all components created during build">
+        <delete dir="${Directory.build.base}" failonerror="false"/>
+    </target>
+
+    <target name="build_core" description="Builds the SBLIM CIM Client core">
+        <delete dir="${Directory.build.core}" failonerror="false"/>
+        <mkdir dir="${Directory.build.base}"/>
+        <mkdir dir="${Directory.build.core}"/>
+        <javac srcdir="${Directory.source.core}" destdir="${Directory.build.core}" debug="on" encoding="utf-8" source="1.5" target="1.5" includeantruntime="false">
+            <classpath>
+            	<pathelement path="${java.class.path}/"/>
+            </classpath>
+        </javac>
+
+        <tstamp>
+          <format property="current.day" pattern="yyyy-MM-dd" />
+          <format property="current.time" pattern="HH:mm:ss"/>
+        </tstamp>
+    	
+        <echo file="${Directory.build.base}/version.txt" append="false" message="PRODUCTNAME=${Manifest.name}${line.separator}" />
+        <echo file="${Directory.build.base}/version.txt" append="true" message="COPYRIGHT=${Base.copyright}${line.separator}" />
+        <echo file="${Directory.build.base}/version.txt" append="true" message="VERSION=${Manifest.version}${line.separator}" />
+        <echo file="${Directory.build.base}/version.txt" append="true" message="BUILDDATE=${current.day}${line.separator}" />
+        <echo file="${Directory.build.base}/version.txt" append="true" message="BUILDTIME=${current.time}${line.separator}" />
+    	<copy todir="${Directory.build.core}/org/sblim/cimclient/" file="${Directory.build.base}/version.txt" />
+    	<copy todir="${Directory.build.core}/org/sblim/slp/" file="${Directory.build.base}/version.txt" />
+
+    	<copy todir="${Directory.build.core}/org/sblim/cimclient/internal/logging/">
+	    	<fileset id="messages" dir="${Directory.source.core}/org/sblim/cimclient/internal/logging/">
+                <include name="*.properties" />
+            </fileset>
+       	</copy>
+    	<copy tofile="${Directory.build.core}/org/sblim/cimclient/internal/logging/messages.properties" file="${Directory.build.core}/org/sblim/cimclient/internal/logging/messages_en.properties" />
+    </target>
+
+    <target name="build_utst" depends="build_core" description="Builds the SBLIM CIM Client unit test code">
+	    <delete dir="${Directory.build.unittest}" failonerror="false"/>
+        <mkdir dir="${Directory.build.base}"/>
+	    <mkdir dir="${Directory.build.unittest}"/>
+	    <javac srcdir="${Directory.source.unittest}" destdir="${Directory.build.unittest}" debug="on" encoding="utf-8" source="1.5" target="1.5" includeantruntime="false">
+			<classpath>
+		    	<pathelement path="${Directory.build.unittest}/"/>
+		    	<pathelement path="${Directory.build.core}/"/>
+		    	<pathelement path="${java.class.path}/"/>
+		    </classpath>
+	    </javac>
+		<copy todir="${Directory.build.unittest}/org/sblim/cimclient/unittest/">
+	    	<fileset dir="${Directory.source.unittest}/org/sblim/cimclient/unittest/">
+                <include name="**/*" />
+	    		<exclude name="**/*.java"/>
+            </fileset>
+       	</copy>
+    </target>
+
+    <target name="build_smpl" depends="build_core" description="Builds the SBLIM CIM Client samples">
+	    <delete dir="${Directory.build.samples}" failonerror="false"/>
+        <mkdir dir="${Directory.build.base}"/>
+	    <mkdir dir="${Directory.build.samples}"/>
+	    <javac srcdir="${Directory.source.samples}" destdir="${Directory.build.samples}" debug="on" encoding="utf-8" source="1.5" target="1.5" includeantruntime="false">
+			<classpath>
+		    	<pathelement path="${Directory.build.samples}/"/>
+		    	<pathelement path="${Directory.build.core}/"/>
+		    	<pathelement path="${java.class.path}/"/>
+		    </classpath>
+	    </javac>
+    	<copy todir="${Directory.build.samples}/org/sblim/cimclient/samples">
+	    	<fileset id="xml" dir="${Directory.source.samples}/org/sblim/cimclient/samples">
+                <include name="*.xml" />
+            </fileset>
+       	</copy>
+    </target>
+	
+    <target name="package" depends="build_core" description="Packages the SBLIM CIM Client into a JAR file">
+    	<delete dir="${Directory.build.lib}" failonerror="false"/>
+        <mkdir dir="${Directory.build.lib}"/>
+        <jar index="true" 
+             destfile="${Directory.build.lib}/${Filename.jar.cim}" 
+             basedir="${Directory.build.core}/" 
+             includes="javax/**, org/sblim/**"
+             excludes="**/*.java, **/*.html, **/doc-files/**">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}" />
+                    <section name="${Manifest.name}">
+                        <attribute name="Implementation-Title" value="${Manifest.title}" />
+                        <attribute name="Implementation-Version" value="${Manifest.version} ${TODAY}" />
+                        <attribute name="Implementation-Vendor" value="${Manifest.vendor}" />
+                        <attribute name="Sealed" value="false" />
+                    </section>
+             </manifest>
+        </jar>
+    	<copy todir="${Directory.build.lib}" file="${basedir}/sblim-cim-client2.properties" />
+    	<copy todir="${Directory.build.lib}" file="${basedir}/sblim-slp-client2.properties" />
+    </target>
+
+
+    <target name="java-doc" description="Composes the JavaDoc to be generated for consumers">
+    	<delete dir="${Directory.build.doc}" failonerror="false"/>
+    	<mkdir dir="${Directory.build.doc}"/>
+        <javadoc sourcepath="${Directory.source.core}"
+    	         destdir="${Directory.build.doc}"
+                 packagenames="javax.*, org.sblim.*"
+                 version="true"
+                 author="true"
+                 use="true"
+                 charset="utf-8"
+        	     encoding="utf-8"
+                 docencoding="utf-8"
+                 source ="1.5"
+                 additionalparam="-quiet"
+                 overview="${Directory.source.core}/overview.html"
+                 windowtitle="SBLIM CIM Client for Java - ${Manifest.version} - Public API Specification"
+        	     useexternalfile="true"
+                 classpath="">
+        	<tag name="invariant" description="Invariants:" scope="types"/>
+        	<tag name="pattern" description="Related patterns or idioms:" scope="types, methods"/>
+        	<tag name="threading" description="Threading considerations:" scope="types,constructors,methods,fields"/>
+            <group
+                 title="Packages containing the public API of the CIM/WBEM&amp;SLP Client"
+                 packages="javax.cim*:javax.wbem*:org.sblim.cimclient:org.sblim.cimclient.discovery:org.sblim.slp"/>
+            <group
+                 title="Packages containing the internal implementation"
+                 packages="org.sblim.cimclient.internal*:org.sblim.slp.internal*"/>
+            <link href="http://download.oracle.com/javase/1.5.0/docs/api/"/>
+            <doctitle><![CDATA[<h1>SBLIM CIM Client for Java - ${Manifest.version} - Public API Specification</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Copyright &#169; 2005, 2013 IBM Corporation. All Rights Reserved.</i>]]></bottom>
+        </javadoc>
+    </target>
+
+	
+    <target name="release" depends="package, java-doc" description="Packages the SBLIM CIM Client into zip archives and tar balls">
+    	<delete>
+    		<fileset dir="${Directory.build.base}" includes="*.zip,*.tar.bz2" excludes=""/>
+    	</delete>
+    	<fixcrlf srcDir="${basedir}" includes="*.spec"
+    	         eol="lf" eof="remove" />
+        <tar destfile="${Directory.build.base}/sblim-cim-client2-${Manifest.version}-bin.tar.bz2" 
+             compression="bzip2" longfile="gnu">
+            <tarfileset
+                dir="${basedir}" 
+                includes="ChangeLog,
+                          COPYING, 
+                          NEWS, 
+                          README,
+            	          smpl/**"
+                prefix="${Directory.package}-bin"/>
+            <tarfileset
+                dir="${Directory.build.base}" 
+                includes="version.txt,
+                          lib/**"
+            	prefix="${Directory.package}-bin"/>
+        </tar>
+
+        <zip destfile="${Directory.build.base}/sblim-cim-client2-${Manifest.version}-bin.zip" duplicate="fail">
+            <zipfileset
+                dir="${basedir}" 
+                includes="ChangeLog,
+                          COPYING, 
+                          NEWS, 
+                          README,
+            	          smpl/**"
+                prefix="${Directory.package}-bin"/>
+            <zipfileset
+                dir="${Directory.build.base}" 
+                includes="version.txt,
+                          lib/**"
+            	prefix="${Directory.package}-bin"/>
+        </zip>
+
+        <tar destfile="${Directory.build.base}/sblim-cim-client2-${Manifest.version}-src.tar.bz2" 
+             compression="bzip2" longfile="gnu">
+            <tarfileset
+                dir="${basedir}" 
+                includes="ChangeLog, 
+                          COPYING, 
+                          NEWS, 
+                          README, 
+                          sblim-cim-client2.properties,
+                          sblim-slp-client2.properties,
+            	          build.xml,
+                          sblim-cim-client2.spec"
+                    prefix="${Directory.package}-src"/>
+            <tarfileset
+                dir="${Directory.build.base}" 
+                includes="version.txt"
+            	prefix="${Directory.package}-src"/>
+            <tarfileset
+                dir="${Directory.source.core}" 
+                includes="**/**"
+            	prefix="${Directory.package}-src/src"/>
+            <tarfileset
+                dir="${Directory.source.unittest}" 
+                includes="**/**"
+            	prefix="${Directory.package}-src/utst"/>
+        	<tarfileset
+        	    dir="${Directory.source.samples}"
+        	    includes="**/**"
+        	    prefix="${Directory.package}-src/smpl"/>
+        </tar>
+
+        <zip zipfile="${Directory.build.base}/sblim-cim-client2-${Manifest.version}-src.zip" duplicate="fail">
+            <zipfileset
+                dir="${basedir}" 
+                includes="ChangeLog, 
+                          COPYING, 
+                          NEWS, 
+                          README, 
+                          sblim-cim-client2.properties,
+            	          sblim-slp-client2.properties,
+            	          build.xml,
+                          sblim-cim-client2.spec"
+                    prefix="${Directory.package}-src"/>
+            <zipfileset
+                dir="${Directory.build.base}" 
+                includes="version.txt"
+            	prefix="${Directory.package}-src"/>
+            <zipfileset
+                dir="${Directory.source.core}" 
+                includes="**/**"
+            	prefix="${Directory.package}-src/src"/>
+            <zipfileset
+                dir="${Directory.source.unittest}" 
+                includes="**/**"
+            	prefix="${Directory.package}-src/utst"/>
+        	<zipfileset
+        	    dir="${Directory.source.samples}"
+        	    includes="**/**"
+        	    prefix="${Directory.package}-src/smpl"/>
+        </zip>
+    	
+        <tar destfile="${Directory.build.base}/sblim-cim-client2-${Manifest.version}-doc.tar.bz2" 
+             compression="bzip2" longfile="gnu">
+            <tarfileset
+                dir="${basedir}" 
+                includes="ChangeLog, 
+                          COPYING, 
+                          NEWS, 
+                          README"
+                prefix="${Directory.package}-doc"/>
+            <tarfileset
+                dir="${Directory.build.base}" 
+                includes="doc/**,
+            	          version.txt"
+            	prefix="${Directory.package}-doc"/>        	
+		</tar>
+    	
+        <zip zipfile="${Directory.build.base}/sblim-cim-client2-${Manifest.version}-doc.zip" duplicate="fail">
+            <zipfileset
+                dir="${basedir}" 
+                includes="ChangeLog, 
+                          COPYING, 
+                          NEWS, 
+                          README"
+                prefix="${Directory.package}-doc"/>
+            <zipfileset
+                dir="${Directory.build.base}" 
+                includes="doc/**,
+                          version.txt"
+            	prefix="${Directory.package}-doc"/>
+        </zip> 
+    </target>
+
+	<target name="unittest" depends="build_utst" description="Executes the unit test package">
+    	<property name="Test.console" value="VERBOSE" />
+		<java classname="org.sblim.cimclient.unittest.TestSuite" fork="true" resultproperty="result" failonerror="false">
+			<arg line="testcases.txt ${Test.console}"/>
+			<classpath>
+		    	<pathelement path="${Directory.build.unittest}/"/>
+		    	<pathelement path="${Directory.build.core}/"/>
+		    	<pathelement path="${java.class.path}/"/>
+		    </classpath>
+		</java>
+		<fail message="${result} test case(s) failed.">
+			<condition>
+				<not>
+    				<equals arg1="${result}" arg2="0" />
+				</not>
+			</condition>
+		</fail>
+		<echo message="all test cases succeeded"/>
+	</target>
+	
+    <target name="cvs-update" description="Updates the SBLIM CIM Client sources from the CVS system">
+        <cvs command="update -AdP"/>
+    </target>
+
+    <target name="all" description="Builds the release archives and executes the unit tests">
+    	<!-- We use antcall to ensure that "release" was executed BEFORE "unittest". Otherwise a failing test 
+    	might stop the release targets from beiing build. The downside of this is that "build_core" is executed
+    	twice because antcall resets the dependency calculation -->
+    	<antcall target="clean"/>
+    	<antcall target="release"/>
+    	<property name="Test.console" value="NORMAL" />
+    	<antcall target="unittest"/>
+	</target>
+
+</project>
+

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head>
+<!--
+ *
+ * (C) Copyright IBM Corp. 2005, 2013
+ *
+ * THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE 
+ * ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE 
+ * CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+ *
+ * You can obtain a current copy of the Eclipse Public License from
+ * http://www.opensource.org/licenses/eclipse-1.0.php
+ *
+ * @author : Andreas Maier, IBM, maiera@de.ibm.com
+ *
+ * Change History
+ * Flag       Date        Prog         Description
+ *-------------------------------------------------------------------------------
+ * 2003590    2008-06-30  blaschke-oss Change licensing from CPL to EPL
+ * 2524131    2009-01-21  raman_arora  Upgrade client to JDK 1.5 (Phase 1)
+ * 2799260    2009-06-01  raman_arora  Fix left over @author tag from Java5 upgrade
+ * 3001243    2010-05-13  blaschke-oss Overview HTML out of date
+ * 3469427    2012-01-04  blaschke-oss Fix broken HTML links
+ * 3505681    2012-03-16  blaschke-oss Add detailed release history HTML
+ * 3536398    2012-08-20  hellerda     Update HTML to reflect secure indication support
+ *    2623    2013-02-24  blaschke-oss Reflect SourceForge upgrade in documentation
+-->
+</head>
+<body style="background-color: white;">
+
+<p>The SBLIM CIM Client for Java is a JSR48 compliant implementation of a WBEM services 
+client that includes an IETF RFC 2614 compliant SLP client for CIM service 
+discovery.</p>
+
+<!--
+<a href="#start">Getting Started Documents</a><br />
+<a href="#runtime">Run Time Requirements</a><br />
+<a href="#buildtime">Build Time Requirements</a><br />
+<a href="#comp">Backward Compatibility</a><br />
+<a href="#limits">Known Limitations</a><br />
+<a href="#web">Related Documentation on the web</a><br />
+<a href="#docuconv">Documentation Conventions</a><br />
+<a href="#process">SBLIM Development Guidelines</a><br />
+<a href="#terms">Terminology Document</a><br />
+-->
+
+<a id="start" name="start" />
+<h2>Getting Started Documents</h2>
+
+<ul>
+    <li><em><a href="org/sblim/cimclient/doc-files/firststeps.html">First steps</a></em>: A nice little example on 
+    how to create a CIM client and enumerate some instances.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/configuration.html">Configuring the client</a></em>: Explains the
+    different ways to modify the CIM client configuration.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/secure.html">Getting started with secure connections</a></em>:
+    An introduction into the different options to set up secure connections.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/indications.html">Getting started with indications</a></em>: Explains how to
+    set up indication listeners.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/secure_indications.html">Getting started with secure indications</a></em>: Explains how to
+    set up secure indication listeners.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/logging.html">The logging API</a></em>: An introduction to the logging and 
+    messaging API.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/discovery.html">The discovery package</a></em>: An introduction to the high level discovery classes.</li>
+</ul>
+
+<h2>Deep dive documents</h2>
+<ul>
+    <li><em><a href="org/sblim/cimclient/doc-files/history.html">Release history</a></em>: Details of SBLIM CIM Client for Java's release history including new features and disruptive changes.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/bestpractise.html">Best practices</a></em>: Best practices for using the SBLIM CIM Client for Java.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/embedded.html">Embedded Objects</a></em>: Details of the embedded object support.</li>
+    <li><em><a href="org/sblim/cimclient/doc-files/unittest.html">Unit Test Coverage</a></em>: What is covered by our unit tests.</li>
+</ul>
+
+<a id="runtime" name="runtime" />
+<h2>Run Time Requirements</h2>
+
+We support JREs from IBM and SUN release 1.5.x/1.6.x/1.7.x. In principal it should run on any
+platform offering a supported JRE. The library is tested on Windows on x86 systems and on Linux on x86 and POWER systems. Our exploiters 
+operate it with success on zLinux and AIX.
+
+<a id="buildtime" name="buildtime" />
+<h2>Build Time Requirements</h2>
+
+<ul>
+  <li>IBM or SUN JDK 1.5.x/1.6.x/1.7.x</li>
+  <li>javadoc 1.5.x or higher</li>
+  <li><a href="http://ant.apache.org/">ant 1.7 or higher</a></li>
+</ul>
+
+
+<a id="comp" name="comp" />
+<h2>Backward Compatibility</h2>
+
+<p>We try to keep the public API of the CIM/WBEM & SLP Clients (see the tables above)
+downward compatible. However this will not always be possible. Compatibility violations
+will be documented. A rule of thumb is:</p>
+<ul><li>Maintenance releases (a.b.c.<b>++d</b>) keep API unchanged. They include only hand-selected bug fixes.</li>
+    <li>Point releases (a.b.<b>++c</b>.d) keep API backward compatible. They include bug-fixes and functional enhancements.</li>
+    <li>Minor releases (a.<b>++b</b>.c.d) might deprecate API and drop API already deprecated. They include remarkable new functionality.</li>
+    <li>Major releases (<b>++a</b>.b.c.d) might do a disruptive API change. A major release usually comes with a larger redesign or adapts 
+    to a disruptive upgrade of an underlying standard.</li>
+</ul>
+There is no downward compatibility guarantee for the internal implementation packages for any version change.</p>
+
+
+<a id="limits" name="limits" />
+<h2>Known Limitations</h2>
+<ul>
+  <li>All known limitations have been resolved.</li>
+</ul>
+
+<a id="bugs" name="bugs" />
+<h2>Bugs</h2>
+<p>If you discover any bugs in the SBLIM CIM Client for Java you can report them on <a href="http://sourceforge.net/p/sblim/bugs/">SourceForge</a>. 
+Choose "jsr48-client" as Component in Bug Tickets.</p> 
+
+<a id="web" name="web" />
+<h2>Related Documentation on the web</h2>
+
+<ul>
+  <li>Java Specification Request 48 "WBEM Services Specification", available at:<br />
+    <a href="http://jcp.org/en/jsr/detail?id=48">http://jcp.org/en/jsr/detail?id=48</a></li>
+  <li>DMTF DSP0004:2005, CIM Infrastructure Specification, version 2.3 (final), available at: <br>
+    <a href="http://www.dmtf.org/standards/published_documents/DSP0004V2.3_final.pdf">
+             http://www.dmtf.org/standards/published_documents/DSP0004V2.3_final.pdf</a></li>
+  <li>DMTF DSP0200:2005, CIM Operations over HTTP, version 1.2 (final), available at: <br>
+    <a href="http://www.dmtf.org/standards/published_documents/DSP200.html">
+             http://www.dmtf.org/standards/published_documents/DSP200.html</a></li>
+  <li>DMTF DSP0201:2005, Representation of CIM in XML, version 2.2 (final), available at: <br>
+    <a href="http://www.dmtf.org/standards/published_documents/DSP201.html">
+             http://www.dmtf.org/standards/published_documents/DSP201.html</a></li>
+  <li>IETF RFC 2614, An API for Service Location, available at: <br>
+    <a href="http://tools.ietf.org/html/rfc2614">
+             http://tools.ietf.org/html/rfc2614</a></li>
+  <li>IETF RFC 2608, Service Location Protocol, Version 2, available at: <br>
+    <a href="http://tools.ietf.org/html/rfc2608">
+             http://tools.ietf.org/html/rfc2608</a></li>
+  <li>IETF RFC 2609, Service Templates and Service: Schemes, available at: <br>
+    <a href="http://tools.ietf.org/html/rfc2609">
+             http://tools.ietf.org/html/rfc2609</a></li>
+  <li>IETF RFC 3224, Vendor Extensions for Service Location Protocol, Version 2, available at: <br>
+    <a href="http://tools.ietf.org/html/rfc3224">
+             http://tools.ietf.org/html/rfc3224</a></li>
+</ul>
+
+
+<a id="docuconv" name="docuconv" />
+<h2>Documentation Conventions</h2>
+
+<ul>
+
+<li>This documentation only describes public entities in the Java classes.</li>
+
+<li>It provides an API specification, not a comprehensive programming
+guide.</li>
+
+<li>It is written from a perspective of the consumer of the API.  For example,
+the phrase "must" is used to indicate an obligation of the consumer, not of the
+implementor of the CIM Client class library, or the CIM server/provider.
+</li>
+
+<li>If preconditions stated in method descriptions are not satisfied, Java
+exceptions should be expected to be thrown.  Note that satisfying the
+preconditions does not guarantee that no exceptions are thrown (for example,
+unsuccessful CIM status codes returned by the CIM server may result in Java
+exceptions, plus there are some exceptions that can always be thrown such as
+NullPointerException).</li>
+
+<li>Method descriptions list all Java exceptions that are explicitly thrown
+by the code of the SBLIM CIM Client for Java. There may be additional exceptions
+that are thrown by the JRE or underlying class libraries.
+<p>
+The specific exception <code>WBEMException</code> contains a CIM status code.
+Method descriptions that list <code>WBEMException</code> list the CIM status
+code identifiers that can happen.  If these identifiers are just listed without
+further description, their semantics is the standard semantics as documented in
+class <code>WBEMException</code>.  If the semantics used by the method differs
+from the standard semantics, this is described specifically in the method
+description.</p></li>
+
+</ul>
+
+<a id="process" name="process" />
+<h2>SBLIM Development Guidelines</h2>
+<p>See <a href="org/sblim/cimclient/doc-files/development.html">here</a>.</p>
+
+
+<a id="terms" name="terms" />
+<h2>Terminology Document</h2>
+<p>See <a href="org/sblim/cimclient/doc-files/terminology.html">here</a>.</p>
+
+
+</body></html>

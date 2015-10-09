@@ -1,0 +1,9 @@
+cim.CIMDataTypeTest
+cim.CIMDateTimeAbsoluteTest
+cim.CIMDateTimeIntervalTest
+cim.CIMObjectPathTest
+cim.CIMMethodTest
+cim.CIMClassPropertyTest
+cim.CIMParameterTest
+cim.CIMInstanceTest
+cim.CIMOctetStringTest

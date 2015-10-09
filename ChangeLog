@@ -1,0 +1,5107 @@
+Release 2.2.5
+=============
+
+Thu Dec 12 08:54:57 CST 2013	blaschke-oss
+
+	2717 Update detailed release history HTML for 2.2.5
+
+	NEWS 1.425
+	history.html 1.12
+
+Thu Dec 12 08:46:35 CST 2013	blaschke-oss
+
+	2716 Sync up javax.* javadoc with JSR48 1.0.0 Final V
+
+	WBEMClient.java 1.23
+	UnsignedInteger8.java 1.17
+	UnsignedInteger64.java 1.14
+	UnsignedInteger32.java 1.16
+	UnsignedInteger16.java 1.16
+	CIMValuedElement.java 1.15
+	CIMObjectPath.java 1.35
+	CIMElement.java 1.16
+	CIMDateTimeInterval.java 1.26
+	CIMDateTimeAbsolute.java 1.24
+	CIMClass.java 1.31
+	NEWS 1.424
+
+Thu Dec 12 07:21:08 CST 2013	blaschke-oss
+
+	2719 TCK: CIM APIs should not generate NullPointerException
+
+	UnsignedInteger8.java 1.16
+	UnsignedInteger64.java 1.13
+	UnsignedInteger32.java 1.15
+	UnsignedInteger16.java 1.15
+	CIMClass.java 1.30
+	NEWS 1.423
+
+Thu Dec 12 06:09:03 CST 2013	blaschke-oss
+
+	2594 CR28: Support CIMErrorDescription HTTP field
+
+	WBEMClientCIMXML.java 1.85
+	NEWS 1.422
+
+Thu Dec 12 05:57:47 CST 2013	blaschke-oss
+
+	2718 Bad CIMStatusCode generates NumberFormatException
+
+	HttpHeaderTest.java 1.7
+	HttpHeader.java 1.15
+	NEWS 1.421
+
+Thu Dec 12 05:35:40 CST 2013	blaschke-oss
+
+	2538 CR14: Support new CORRELATOR element
+
+	SimpleReqNode.java 1.10
+	SimpleExpReqNode.java 1.8
+	CIMXMLParserImpl.java 1.87
+	DSP0201Test.java 1.3
+	CorrelatorNode.java 1.2
+	NodeFactory.java 1.11
+	NodeConstIf.java 1.14
+	NEWS 1.420
+
+Tue Dec 10 10:22:00 CST 2013	blaschke-oss
+
+	2715 Add VALUE.NULL support
+
+	IReturnValueTest.java 1.3
+	ValueRefArrayNode.java 1.13
+	ValueArrayNode.java 1.11
+	CIMXMLParserImpl.java 1.86
+	NEWS 1.419
+
+Mon Dec 09 04:46:21 CST 2013	blaschke-oss
+
+	2714 Add detailed CIM-XML parser test based on DSP0201 2.4
+
+	DSP0201Test.java 1.2
+	testcases.parser.txt 1.13
+	unittest.html 1.34
+	NEWS 1.418
+
+Mon Dec 09 04:33:42 CST 2013	blaschke-oss
+
+	2713 Enforce loose validation of CIM-XML documents
+
+	XMLDefaultHandlerImpl.java 1.9
+	CIMXMLParserImpl.java 1.85
+	NEWS 1.417
+
+Tue Dec 03 08:06:16 CST 2013	blaschke-oss
+
+	2712 SimpleReqNode allows any CIM element as child
+
+	SimpleReqNode.java 1.9
+	NEWS 1.416
+
+Wed Nov 27 05:56:38 CST 2013	blaschke-oss
+
+	2709 Lower the level of the EOF message to FINE
+
+	ChunkedInputStream.java 1.15
+	HttpMethod.java 1.9
+	HttpClient.java 1.52
+	NEWS 1.415
+
+Wed Nov 27 05:47:39 CST 2013	blaschke-oss
+
+	2711 LOCALNAMESPACEPATH allows 0 NAMESPACE children
+
+	WBEMConfigurationDefaults.java 1.38
+	WBEMConfiguration.java 1.56
+	LocalNameSpacePathNode.java 1.10
+	CIMXMLParserImpl.java 1.84
+	WBEMConfigurationProperties.java 1.58
+	sblim-cim-client2.properties 1.40
+	NEWS 1.414
+
+Wed Nov 27 05:24:28 CST 2013	blaschke-oss
+
+	2710 parseVALUEOBJECTWITH(LOCAL)PATH ignores (LOCAL)CLASSPATH child
+
+	CIMXMLParserImpl.java 1.83
+	NEWS 1.413
+
+Tue Nov 26 12:22:01 CST 2013	blaschke-oss
+
+	2708 CIMNode quietly ignores DECLARATION child
+
+	CIMNode.java 1.9
+	NEWS 1.412
+
+Tue Nov 26 12:15:19 CST 2013	blaschke-oss
+
+	2707 INSTANCENAME ignores KEYVALUE and VALUE.REFERENCE children
+
+	InstanceNameNode.java 1.9
+	CIMXMLParserImpl.java 1.82
+	NEWS 1.411
+
+Tue Nov 26 12:06:15 CST 2013	blaschke-oss
+
+	2706 Bad PARAMETER.REFARRAY ARRAYSIZE generates NumberFormatException
+
+	Node.java 1.17
+	CIMXMLParserImpl.java 1.81
+	NEWS 1.410
+
+Tue Nov 26 11:55:59 CST 2013	blaschke-oss
+
+	2705 PARAMETER.ARRAY does not require TYPE attribute
+
+	ParameterArrayNode.java 1.7
+	CIMXMLParserImpl.java 1.80, 1.88
+	NEWS 1.409
+
+Tue Nov 26 11:48:11 CST 2013	blaschke-oss
+
+	2704 PARAMETER does not require TYPE attribute
+
+	ParameterNode.java 1.7
+	CIMXMLParserImpl.java 1.79
+	NEWS 1.408
+
+Mon Nov 25 07:56:30 CST 2013	blaschke-oss
+
+	2703 MethodNode should not require TYPE attribute
+
+	MethodNode.java 1.12
+	CIMXMLParserImpl.java 1.78
+	NEWS 1.407
+
+Mon Nov 25 07:49:28 CST 2013	blaschke-oss
+
+	2702 Bad PROPERTY.ARRAY ARRAYSIZE generates NumberFormatException
+
+	Node.java 1.16
+	CIMXMLParserImpl.java 1.77
+	NEWS 1.406
+
+Mon Nov 25 07:42:35 CST 2013	blaschke-oss
+
+	2701 PROPERTY.ARRAY does not require TYPE attribute
+
+	PropertyArrayNode.java 1.10
+	CIMXMLParserImpl.java 1.76
+	NEWS 1.405
+
+Mon Nov 25 07:33:29 CST 2013	blaschke-oss
+
+	2700 PROPERTY does not require TYPE attribute
+
+	PropertyNode.java 1.10
+	CIMXMLParserImpl.java 1.75
+	NEWS 1.404
+
+Mon Nov 25 07:24:19 CST 2013	blaschke-oss
+
+	2699 parseQUALIFIER does not require TYPE attribute
+
+	SVCEnumQualiTypes.xml 1.4
+	CIMXMLParserImpl.java 1.74
+	NEWS 1.403
+
+Mon Nov 25 07:08:32 CST 2013	blaschke-oss
+
+	2697 (I)MethodResponseNode allows ERROR with PARAMVALUE
+
+	MethodResponseNode.java 1.12
+	IMethodResponseNode.java 1.10
+	NEWS 1.402
+
+Mon Nov 25 06:55:37 CST 2013	blaschke-oss
+
+	2696 parseIRETURNVALUE ignores VALUE and VALUE.ARRAY
+
+	IReturnValueTest.java 1.2
+	testcases.parser.txt 1.12
+	CIMXMLParserImpl.java 1.73
+	unittest.html 1.33
+	NEWS 1.401
+
+Mon Nov 25 06:37:54 CST 2013	blaschke-oss
+
+	2695 parseMETHODCALL allows LOCALCLASSPATH and LOCALINSTANCEPATH
+
+	CIMXMLParserImpl.java 1.72
+	NEWS 1.400
+
+Mon Nov 25 06:27:38 CST 2013	blaschke-oss
+
+	2694 NAME attribute not required by DOM parser (part 2)
+
+	CIMXMLParserImpl.java 1.71
+	NEWS 1.399
+	
+Wed Nov 06 10:41:43 CST 2013	blaschke-oss
+
+	2693 ReturnValueNode allows invalid PARAMTYPE attribute
+
+	Node.java 1.15
+	CIMObjectFactory.java 1.20
+	NEWS 1.398
+
+Wed Nov 06 10:34:47 CST 2013	blaschke-oss
+
+	2691 RETURNVALUE should not require PARAMTYPE attribute
+
+	EmbObjHandler.java 1.15
+	CIMXMLParserImpl.java 1.70
+	NEWS 1.397
+
+Wed Nov 06 10:24:19 CST 2013	blaschke-oss
+
+	2537 Add new data types for PARAMVALUE
+
+	CIMXMLParserImpl.java 1.69
+	ParamValueNode.java 1.10
+	NEWS 1.396
+
+Tue Oct 29 08:50:58 CDT 2013	blaschke-oss
+
+	2690 Remove RESPONSEDESTINATION support
+
+	MethodCallNode.java 1.8
+	IMethodCallNode.java 1.9
+	AbstractMethodCallNode.java 1.12
+	NodeFactory.java 1.10
+	NodeConstIf.java 1.13
+	NEWS 1.395
+
+Tue Oct 29 08:33:16 CDT 2013	blaschke-oss
+
+	2689 createMETHODCALL should not add PARAMTYPE attribute
+
+	CIMXMLBuilderImpl.java 1.38
+	CIMClientXML_HelperImpl.java 1.46
+	NEWS 1.394
+
+Tue Oct 29 08:04:04 CDT 2013	blaschke-oss
+
+	2688 parseMETHODCALL looks for CIMName attribute instead of NAME
+
+	CIMXMLParserImpl.java 1.68
+	NEWS 1.393
+
+Tue Oct 29 07:57:06 CDT 2013	blaschke-oss
+
+	2687 ExpParamValueNode allows VALUE, (I)METHODRESPONSE children
+
+	ExpParamValueNode.java 1.8
+	NEWS 1.392
+
+Tue Oct 29 07:50:00 CDT 2013	blaschke-oss
+
+	2686 parseEXPPARAMVALUE allows 2+ children, prohibits 0
+
+	CIMXMLParserImpl.java 1.67
+	NEWS 1.391
+
+Tue Oct 29 07:43:34 CDT 2013	blaschke-oss
+
+	2685 Element.getAttribute returns empty string if no attribute
+
+	CIMXMLParserImpl.java 1.66
+	NEWS 1.390
+
+Tue Oct 29 07:34:21 CDT 2013	blaschke-oss
+
+	2684 parseEXPMETHODRESPONSE has several issues
+
+	CIMXMLParserImpl.java 1.65
+	NEWS 1.389
+
+Tue Oct 29 07:22:24 CDT 2013	blaschke-oss
+
+	2683 KEYVALUE VALUETYPE optional, "string" default
+
+	KeyValueNode.java 1.15
+	CIMXMLParserImpl.java 1.64
+	NEWS 1.388
+
+Tue Oct 29 07:11:59 CDT 2013	blaschke-oss
+
+	2682 (I)MethodCallNode allows no LOCAL*PATH
+
+	MethodCallNode.java 1.7
+	IMethodCallNode.java 1.8
+	AbstractMethodCallNode.java 1.11
+	NEWS 1.387
+
+Tue Oct 29 07:00:09 CDT 2013	blaschke-oss
+
+	2681 parseQUALIFIERDECLARATION does not require TYPE attribute
+
+	SVCEnumQualiTypes.xml 1.3
+	CIMXMLParserImpl.java 1.63
+	NEWS 1.386
+
+Tue Oct 29 06:39:35 CDT 2013	blaschke-oss
+
+	2680 IPARAMVALUE parsing broken on DOM/SAX
+
+	IParamValueNode.java 1.9
+	CIMXMLParserImpl.java 1.62
+	NEWS 1.385
+
+Tue Oct 29 06:28:43 CDT 2013	blaschke-oss
+
+	2679 parseIMETHODCALL requires one IPARAMVALUE child element
+
+	CIMXMLParserImpl.java 1.61
+	NEWS 1.384
+
+Tue Oct 29 06:21:07 CDT 2013	blaschke-oss
+
+	2678 parseMULTI___ allows one SIMPLE___ child element
+
+	CIMXMLParserImpl.java 1.60
+	NEWS 1.383
+
+Tue Oct 29 06:09:56 CDT 2013	blaschke-oss
+
+	2677 ObjectPathNode allows all child nodes
+
+	NEWS 1.382
+	ObjectPathNode.java 1.7
+
+Fri Oct 11 05:34:21 CDT 2013	blaschke-oss
+
+	2676 parseMULTI(EXP)REQ looking for wrong child elements
+
+	CIMXMLParserImpl.java 1.59
+	NEWS 1.381
+
+Fri Oct 11 05:28:14 CDT 2013	blaschke-oss
+
+	2675 CIMXMLParseException messages should contain element name
+
+	CIMXMLParserImpl.java 1.58
+	NEWS 1.380
+
+Fri Oct 11 05:13:10 CDT 2013	blaschke-oss
+
+	2674 Null pointer exception in CIMDateTime(String)
+
+	CIMDateTimeIntervalTest.java 1.10
+	CIMDateTimeAbsoluteTest.java 1.13
+	CIMDateTimeInterval.java 1.25
+	CIMDateTimeAbsolute.java 1.23
+	NEWS 1.379
+
+Fri Oct 11 04:56:55 CDT 2013	blaschke-oss
+
+	2673 NameSpaceNode does not need testCompletness()
+
+	NameSpaceNode.java 1.8
+	NEWS 1.378
+
+Fri Oct 11 04:44:44 CDT 2013	blaschke-oss
+
+	2672 Remove SIMPLEREQACK support
+
+	NodeFactory.java 1.9
+	NodeConstIf.java 1.12
+	NEWS 1.377
+	SimpleRspNode.java 1.11
+
+Wed Oct 09 13:04:10 CDT 2013	blaschke-oss
+
+	2671 Potential null pointer exception in parseERROR
+
+	CIMXMLParserImpl.java 1.57
+	NEWS 1.376
+
+Wed Oct 09 12:48:54 CDT 2013	blaschke-oss
+
+	2670 NAME attribute not required by DOM parser
+
+	CIMXMLParserImpl.java 1.56
+	NEWS 1.375
+
+Wed Oct 09 12:27:00 CDT 2013	blaschke-oss
+
+	2669 Potential null pointer exception in parseMESSAGE
+
+	CIMXMLParserImpl.java 1.55
+	NEWS 1.374
+
+Wed Oct 09 12:18:55 CDT 2013	blaschke-oss
+
+	2668 Potential null pointer exception in parseCIM
+
+	CIMXMLParserImpl.java 1.54
+	NEWS 1.373
+
+Mon Oct 07 04:48:42 CDT 2013	blaschke-oss
+
+	2666 CR12: Remove ENUMERATIONCONTEXT
+
+	EnumerateResponseSAX.java 1.5
+	EnumerateResponsePULL.java 1.3
+	EnumerateResponseDOM.java 1.5
+	NodeConstIf.java 1.11
+	NEWS 1.372
+
+Release 2.2.4
+=============
+
+Thu Sep 12 09:32:11 CDT 2013	blaschke-oss
+
+	2661 Update detailed release history HTML for 2.2.4
+
+	history.html 1.11
+	NEWS 1.370
+
+Thu Sep 12 09:26:37 CDT 2013	blaschke-oss
+
+	2662 Need the specific SSLHandshakeException during the cim call
+
+	WBEMClientCIMXML.java 1.84
+	NEWS 1.369
+
+Thu Sep 12 09:18:29 CDT 2013	blaschke-oss
+
+	2660 CIMObjectPath.equalsModelPath same as equals
+
+	CIMObjectPathTest.java 1.19
+	unittest.html 1.32
+	CIMObjectPath.java 1.34
+	NEWS 1.368
+
+Thu Sep 12 08:59:02 CDT 2013	blaschke-oss
+
+	2657 Potential null pointer exception in handleConnection
+
+	HttpConnectionHandler.java 1.12
+	WBEMListenerSBLIM.java 1.24
+	NEWS 1.367
+
+Thu Sep 12 08:14:28 CDT 2013	blaschke-oss
+
+	2151 gzip compression not supported
+
+	createInstance.xml.gz 1.2
+	createInstance.xml 1.2
+	WBEMConfigurationDefaults.java 1.37
+	WBEMConfiguration.java 1.55
+	HttpClient.java 1.51
+	unittest.html 1.31
+	WBEMConfigurationProperties.java 1.57
+	sblim-cim-client2.properties 1.39
+	NEWS 1.366
+	WBEMClientTest.java 1.4
+
+Mon Sep 09 10:59:02 CDT 2013	blaschke-oss
+
+	2655 Content-length must be ignored when Transfer-encoding present
+
+	MessageReader.java 1.11
+	HttpClient.java 1.50
+	NEWS 1.365
+
+Tue Aug 20 07:30:35 CDT 2013	blaschke-oss
+
+	2651 IOException when tracing the cimxml
+
+	WBEMClientCIMXML.java 1.83
+	LogAndTraceBroker.java 1.30
+	NEWS 1.364
+
+Tue Aug 20 07:10:52 CDT 2013	blaschke-oss
+
+	2654 Check jcc idle time with CIMOM keepalive timeout to avoid EOF
+
+	WBEMConfigurationDefaults.java 1.36
+	WBEMConfiguration.java 1.54
+	HttpClient.java 1.49
+	WBEMConfigurationProperties.java 1.56
+	sblim-cim-client2.properties 1.38
+	NEWS 1.363
+
+Tue Aug 20 06:55:40 CDT 2013	blaschke-oss
+
+	2653 FVT: java.lang.ExceptionInInitializerError during static init
+
+	WBEMConfiguration.java 1.53
+	NEWS 1.362
+
+Tue Aug 20 06:46:08 CDT 2013	blaschke-oss
+
+	2652 LogAndTraceBroker.setXmlTraceStream should not close previous stream
+
+	LogAndTraceBroker.java 1.29
+	NEWS 1.361
+
+Thu Aug 01 06:45:17 CDT 2013	blaschke-oss
+
+	2650 SLP opaque value handling incorrect
+
+	AttributeHandler.java 1.7
+	ConvertTest.java 1.9
+	Convert.java 1.5
+	ServiceLocationAttribute.java 1.15
+	NEWS 1.360
+
+Mon Jul 29 10:30:24 CDT 2013	blaschke-oss
+
+	2604 SAXException messages should contain node name
+
+	ValueReferenceNode.java 1.10
+	ValueRefArrayNode.java 1.12
+	ValueObjectNode.java 1.10
+	QualifierNode.java 1.14
+	QualiDeclNode.java 1.12
+	NameSpaceNode.java 1.7
+	KeyValueNode.java 1.14
+	ErrorNode.java 1.10
+	CIMNode.java 1.8
+	NEWS 1.359
+
+Mon Jul 29 10:02:18 CDT 2013	blaschke-oss
+
+	2647 Add two ssl protocol properties for http server and client
+
+	WBEMConfiguration.java 1.52
+	HttpSocketFactory.java 1.21
+	WBEMConfigurationProperties.java 1.55
+	sblim-cim-client2.properties 1.37
+	NEWS 1.358
+
+Release 2.2.3
+=============
+
+Thu May 30 08:18:18 CDT 2013	blaschke-oss
+
+	2643 Update detailed release history HTML for 2.2.3
+
+	history.html 1.10
+	NEWS 1.356
+
+Thu May 30 08:10:35 CDT 2013	blaschke-oss
+
+	2642 Seperate properties needed for cim client and listener to filter out ciphers
+
+	WBEMConfiguration.java 1.51
+	HttpServerConnection.java 1.18
+	HttpClientPool.java 1.15
+	HttpClient.java 1.48
+	WBEMConfigurationProperties.java 1.54
+	sblim-cim-client2.properties 1.36
+	NEWS 1.355
+
+Thu May 30 07:25:24 CDT 2013	blaschke-oss
+
+	2635 Slowloris DoS attack for CIM indication listener port
+
+	WBEMListenerTest.java 1.5
+	WBEMConstants.java 1.17
+	WBEMConfigurationDefaults.java 1.35
+	WBEMConfiguration.java 1.50
+	MessageReader.java 1.10
+	HttpHeader.java 1.14
+	HttpConnectionHandler.java 1.11
+	unittest.html 1.30
+	WBEMListenerSBLIM.java 1.23
+	WBEMConfigurationProperties.java 1.53
+	sblim-cim-client2.properties 1.35
+	NEWS 1.354
+
+Mon May 27 14:13:33 CDT 2013	blaschke-oss
+
+	2640 Multiple CDATA parsing broken in DOM parser
+
+	enumerateClasses.xml 1.10
+	CIMXMLParserImpl.java 1.53
+	NEWS 1.353
+
+Mon May 27 14:03:43 CDT 2013	blaschke-oss
+
+	2639 CDATA parsing broken in PULL parser
+
+	enumerateClasses.xml 1.9
+	XMLPullParser.java 1.24
+	NEWS 1.352
+
+Mon May 27 13:56:31 CDT 2013	blaschke-oss
+
+	2638 Do not build empty REFERENCECLASS
+
+	CIMXMLBuilderImpl.java 1.37
+	NEWS 1.351
+
+Mon May 27 13:46:18 CDT 2013	blaschke-oss
+
+	2637 Add nested embedded instance builder test
+
+	NestedEmbInstTest.java 1.3
+	unittest.html 1.29
+	NEWS 1.350
+
+Mon May 27 10:03:55 CDT 2013	blaschke-oss
+
+	2636 Nested embedded instances cause CIMXMLParseException
+
+	NestedEmbInst.xml 1.2
+	NestedEmbInstTest.java 1.2
+	testcases.parser.txt 1.11
+	PropertyReferenceNode.java 1.10
+	ParameterReferenceNode.java 1.6
+	ParameterRefArrayNode.java 1.11
+	CIMXMLParserImpl.java 1.52
+	unittest.html 1.28
+	NEWS 1.349
+
+Mon May 27 08:40:36 CDT 2013	blaschke-oss
+
+	2632 Potential Null Point Exception in CIMDataType
+
+	CIMDataTypeTest.java 1.6
+	CIMDataType.java 1.19
+	NEWS 1.348
+
+Wed May 08 12:55:16 CDT 2013	buccella
+
+	2605 SAX parser throws wrong exception
+
+	ParameterRefArrayNode.java 1.10
+	ParamValueNode.java 1.9
+	Node.java 1.14
+	NEWS 1.347
+
+Wed May 08 12:30:35 CDT 2013	blaschke-oss
+
+	2628 Limit size of LinkedList of CIMEvents to be dispatched
+
+	CIMEventDispatcher.java 1.14
+	WBEMConfigurationDefaults.java 1.34
+	sblim-cim-client2.properties 1.34
+	NEWS 1.346
+	WBEMConfiguration.java 1.49
+	WBEMListenerSBLIM.java 1.22
+	WBEMConfigurationProperties.java 1.52
+
+Release 2.2.2
+=============
+
+Thu Mar 14 09:09:18 CDT 2013	blaschke-oss
+
+	2624 Update detailed release history HTML for 2.2.2
+
+	history.html 1.8
+	NEWS 1.344
+
+Thu Mar 14 08:50:12 CDT 2013	blaschke-oss
+
+	2618 Need to add property to disable weak cipher suites for the secure indication
+
+	HttpServerConnection.java 1.17
+	WBEMConfiguration.java 1.48
+	Util.java 1.6
+	HttpClientPool.java 1.14
+	HttpClient.java 1.47
+	WBEMConfigurationProperties.java 1.51
+	sblim-cim-client2.properties 1.33
+	NEWS 1.343
+
+Sun Mar 10 10:04:35 CDT 2013	blaschke-oss
+
+	2623 Reflect SourceForge upgrade in documentation
+
+	overview.html 1.22
+	development.html 1.7
+	NEWS 1.342
+
+Sat Mar 09 06:29:56 CST 2013	blaschke-oss
+
+	2616 Add new API WBEMClientSBLIM.sendIndication()
+
+	WBEMClientTest.java 1.3
+	WBEMClientCIMXML.java 1.82
+	CIMXMLParserImpl.java 1.51
+	CIMXMLBuilderImpl.java 1.36
+	CIMClientXML_HelperImpl.java 1.45
+	unittest.html 1.27
+	WBEMClientSBLIM.java 1.11
+	NEWS 1.341
+
+Sat Mar 09 05:53:00 CST 2013	blaschke-oss
+
+	2621 Not all chunked input has trailers
+
+	TrailerTest.java 1.11
+	ChunkedInputStream.java 1.14
+	MessageReader.java 1.9
+	HttpClient.java 1.46
+	NEWS 1.340
+
+Sat Mar 09 05:39:55 CST 2013	blaschke-oss
+
+	2620 Chunked output broken
+
+	ChunkedOutputStream.java 1.8
+	MessageWriter.java 1.10
+	NEWS 1.339
+
+Sat Mar 09 05:31:01 CST 2013	blaschke-oss
+
+	2619 Host should contain port when not 5988/5989
+
+	WBEMConstants.java 1.16
+	HttpClient.java 1.45
+	NEWS 1.338
+
+Wed Mar 06 07:22:00 CST 2013	blaschke-oss
+
+	2615 Add Allura links to detailed release history HTML
+
+	history.html 1.7
+	NEWS 1.337
+
+Wed Mar 06 07:05:07 CST 2013	blaschke-oss
+
+	2614 Remove redundant code in transmitRequest
+
+	WBEMClientCIMXML.java 1.81
+	NEWS 1.33
+
+Thu Feb 14 17:10:41 CST 2013	blaschke-oss
+
+	3602604 Clean up SAXException messages
+
+	ValueRefArrayNode.java 1.11
+	ValueObjectNode.java 1.9
+	SimpleExpRspNode.java 1.9
+	ReturnValueNode.java 1.12
+	Node.java 1.13
+	MethodNode.java 1.11
+	LocalClassPathNode.java 1.10
+	KeyValueNode.java 1.13
+	KeyBindingNode.java 1.8
+	ClassPathNode.java 1.10
+	NEWS 1.335
+
+Wed Feb 06 09:01:05 CST 2013	blaschke-oss
+
+	3601894 Enhance HTTP and CIM-XML tracing
+
+	CIMIndicationHandler.java 1.33
+	WBEMClientCIMXML.java 1.80
+	DebugInputStream.java 1.10
+	ChunkedInputStream.java 1.13
+	MessageWriter.java 1.9
+	MessageReader.java 1.8
+	HttpHeader.java 1.13
+	HttpClient.java 1.44
+	CIMClientXML_HelperImpl.java 1.44
+	NEWS 1.334
+
+Wed Feb 06 08:05:05 CST 2013	blaschke-oss
+
+	3598613 different data type in cim instance and cim object path
+
+	Bug3598613.xml 1.2
+	Bug3598613Test.java 1.2
+	testcases.parser.txt 1.10
+	CIMInstanceTest.java 1.8
+	WBEMConfigurationDefaults.java 1.33
+	WBEMConfiguration.java 1.47
+	ValueNamedInstanceNode.java 1.9
+	ValueInstanceWithPathNode.java 1.3
+	InstanceNode.java 1.9
+	CIMXMLParserImpl.java 1.50
+	CIMHelper.java 1.10
+	unittest.html 1.26
+	WBEMConfigurationProperties.java 1.50
+	sblim-cim-client2.properties 1.32
+	NEWS 1.333
+
+Wed Feb 06 07:05:46 CST 2013	blaschke-oss
+
+	3596303 windows http response WWW-Authenticate: Negotiate fails
+
+	HttpChallengeTest.java 1.2
+	version.txt 1.5
+	LogAndTraceBroker.java 1.28
+	Challenge.java 1.7
+	unittest.html 1.25
+	build.xml 1.48
+	testcases.txt 1.20
+	NEWS 1.332
+
+Release 2.2.1
+=============
+
+Wed Dec 12 06:42:41 CST 2012	blaschke-oss
+
+	3584119 Update detailed release history HTML for 2.2.1
+
+	history.html 1.6
+	NEWS 1.330
+
+Tue Dec 11 10:25:37 CST 2012	blaschke-oss
+
+3592502 Enhance CIMDataType unit test
+
+	history.html 1.5
+	CIMDataTypeTest.java 1.5
+	unittest.html 1.24
+	NEWS 1.329
+
+Tue Dec 11 09:59:49 CST 2012	blaschke-oss
+
+	3588558 An enhancement on Java CIM Client logging
+
+	CIMXMLBuilderImpl.java 1.35
+	NEWS 1.328
+
+Mon Nov 26 07:22:14 CST 2012	blaschke-oss
+
+	3557283 Print full response when get EOF from CIMOM
+
+	HttpMethod.java 1.8
+	HttpClient.java 1.43
+	ChunkedInputStream.java 1.12
+	NEWS 1.327
+
+Thu Nov 15 08:56:39 CST 2012	blaschke-oss
+
+	3576396 Improve logging of config file name
+
+	WBEMConfiguration.java 1.46
+	LogAndTraceBroker.java 1.27
+	NEWS 1.326
+
+Thu Nov 15 08:46:04 CST 2012	blaschke-oss
+
+	3572993 parseDouble("2.2250738585072012e-308") DoS vulnerability
+
+	WBEMConfiguration.java 1.45
+	KeyValueNode.java 1.12
+	BadDoubleStringsTest.java 1.2
+	testcases.util.txt 1.3
+	WBEMConfigurationDefaults.java 1.32
+	Util.java 1.5
+	RealValue.java 1.9
+	CIMObjectFactory.java 1.19
+	CIMXMLParserImpl.java 1.49
+	unittest.html 1.23
+	WBEMConfigurationProperties.java 1.49
+	sblim-cim-client2.properties 1.31
+	NEWS 1.325
+
+Mon Oct 01 17:30:38 CDT 2012	blaschke-oss
+
+	3567433 Add links to top of detailed release history HTML
+
+	history.html 1.4
+	NEWS 1.324
+
+Release 2.2.0
+=============
+
+Thu Sep 13 15:34:15 CDT 2012	blaschke-oss
+
+	3567429 Update detailed release history HTML for 2.2.0
+
+	history.html 1.3
+	NEWS 1.322
+
+Thu Sep 13 05:08:29 CDT 2012	blaschke-oss
+
+	3555752 Sync up javax.* javadoc with JSR48 1.0.0 Final IV
+
+	WBEMClient.java 1.22
+	NEWS 1.321
+
+Thu Sep 13 04:29:24 CDT 2012	blaschke-oss
+
+	3565581 TCK: remove unnecessary overriding methods
+
+	WBEMException.java 1.15
+	CIMQualifierType.java 1.14
+	CIMQualifier.java 1.16
+	CIMProperty.java 1.19
+	CIMParameter.java 1.18
+	CIMMethod.java 1.20
+	CIMDateTimeInterval.java 1.24
+	CIMDateTimeAbsolute.java 1.22
+	CIMClassProperty.java 1.21
+	CIMClass.java 1.29
+	CIMArgument.java 1.12
+	NEWS 1.320
+
+Mon Sep 10 05:30:17 CDT 2012	blaschke-oss
+
+	3562235 LogAndTraceBrokerTest breaks unit test tracing
+
+	testcases.txt 1.19
+	LogAndTraceBrokerTest.java 1.11
+	NEWS 1.319
+
+Mon Sep 10 05:18:43 CDT 2012	hellerda
+
+	3536399 Add client/listener peer authentication properties
+
+	notrust.pks 1.3
+	SSLConfigurationTest.java 1.8
+	WBEMConfigurationDefaults.java 1.31
+	WBEMConfiguration.java 1.44
+	messages_en.properties 1.16
+	messages_de.properties 1.16
+	Messages.java 1.17
+	WBEMListenerTest.java 1.4
+	HttpSocketFactory.java 1.20
+	HttpServerConnection.java 1.16
+	unittest.html 1.22
+	secure_indications.html 1.3
+	secure.html 1.9
+	WBEMConfigurationProperties.java 1.48
+	sblim-cim-client2.properties 1.30
+	NEWS 1.318
+
+Thu Sep 06 14:12:23 CDT 2012	blaschke-oss
+
+	3529151 TCK: CIMInstance property APIs include keys from COP
+
+	CIMInstance.java 1.22
+	XMLHostStrTest.java 1.8
+	TVPair.java 1.15
+	ParserTest.java 1.25
+	ModifyInstanceTest.java 1.8
+	CIMBuilder.java 1.22
+	CIMObjectPathTest.java 1.18
+	CIMInstanceTest.java 1.7
+	MOF.java 1.22
+	CIMObjectPath.java 1.33
+	NEWS 1.317
+
+Thu Sep 06 12:38:27 CDT 2012	hellerda
+
+	3536398 Update HTML to reflect secure indication support
+
+	overview.html 1.21
+	secure_indications.html 1.2
+	secure.html 1.8
+	indications.html 1.13
+	configuration.html 1.11
+	NEWS 1.316
+
+
+Thu Sep 06 09:46:47 CDT 2012	blaschke-oss
+
+	3554738 dump CIM xml by LogAndTraceBroker.trace()
+
+	NEWS 1.315
+	LogAndTraceBrokerTest.java 1.10
+	CIMIndicationHandler.java 1.32
+	WBEMClientCIMXML.java 1.79
+	LogAndTraceBroker.java 1.26
+	DebugInputStream.java 1.9
+	unittest.html 1.21
+	logging.html 1.8
+	LogAndTraceManager.java 1.8
+	CIMXMLTraceListener.java 1.2
+	Jsr48OperationSample.java 1.14
+
+Thu Aug 16 21:47:40 CDT 2012	blaschke-oss
+
+	3553858 Append duplicate HTTP header fields instead of replace
+
+	CIMIndicationHandler.java 1.31
+	WBEMClientCIMXML.java 1.78
+	HttpHeader.java 1.12
+	NEWS 1.314
+
+Thu Aug 16 21:22:13 CDT 2012	blaschke-oss
+
+	3535383 HashDoS fix 3498482
+
+	NodeFactory.java 1.8
+	NEWS 1.313
+
+Thu Aug 16 21:11:09 CDT 2012	blaschke-oss
+
+	3545797 Support new error code of SFCB
+
+	WBEMClientCIMXML.java 1.77
+	NEWS 1.312
+
+Thu Aug 16 20:51:32 CDT 2012	hellerda
+
+	3529066 Add Jsr48IndicationTester
+
+	Jsr48IndicationTester.java 1.2
+	NEWS 1.311
+
+Thu Jun 21 07:28:32 CDT 2012	blaschke-oss
+
+	3524050 Improve WWW-Authenticate in HTTPClient.java
+
+	sblim-cim-client2.properties 1.29
+	NEWS 1.310
+	WBEMConfiguration.java 1.43
+	HttpClient.java 1.42
+	WBEMConfigurationProperties.java 1.47
+
+Wed Jun 20 13:09:50 CDT 2012	hellerda
+
+	3529065 Enable WBEMListener get/setProperty
+
+	WBEMListenerTest.java 1.3
+	WBEMConfigurationTest.java 1.20
+	WBEMListenerSBLIM.java 1.20
+	NEWS 1.309
+
+Wed Jun 13 18:23:17 CDT 2012	blaschke-oss
+
+	3529062 WBEMListenerFactory should return new instance
+
+	WBEMListenerFactory.java 1.12
+	WBEMListenerTest.java 1.2
+	testcases.wbem.txt 1.3
+	unittest.html 1.20
+	WBEMListenerSBLIM.java 1.19
+	NEWS 1.308
+
+Fri Jun 01 07:48:36 CDT 2012	blaschke-oss
+
+	3527580 WBEMClient should not throw IllegalArgumentException
+
+	NEWS 1.307
+	CIMClientXML_HelperImpl.java 1.43
+
+Thu May 31 10:13:32 CDT 2012	blaschke-oss
+
+	3526681 CIMError valid status codes out-of-date
+
+	CIMError.java 1.6
+	NEWS 1.306
+
+Thu May 31 10:06:21 CDT 2012	blaschke-oss
+
+	3526679 DOM parser ignores ERROR node CODE
+
+	CIMXMLParserImpl.java 1.48
+	NEWS 1.305
+
+Thu May 31 09:58:14 CDT 2012	blaschke-oss
+
+	3526675 Unit test fails on Java 7
+
+	DTStringReader.java 1.8
+	NEWS 1.304
+
+Fri May 25 06:27:43 CDT 2012	blaschke-oss
+
+	3525914 TCK: SetPropertyTest.testSetProperty failing
+
+	WBEMClientCIMXML.java 1.76
+	NEWS 1.303
+
+Fri May 25 06:20:59 CDT 2012	blaschke-oss
+
+	3521157 JSR48 1.0.0: PROP_ENABLE_*_LOGGING is Level, not 0/1
+
+	sblim-cim-client2.properties 1.28
+	NEWS 1.302
+	WBEMConfigurationTest.java 1.19
+	WBEMClientCIMXML.java 1.75
+	WBEMConfigurationDefaults.java 1.30
+	WBEMConfiguration.java 1.42
+	WBEMConfigurationProperties.java 1.46
+	WBEMClientConstants.java 1.8
+
+Fri May 25 06:02:01 CDT 2012	blaschke-oss
+
+	3525657 Sync up javax.* javadoc with JSR48 1.0.0 Final III
+
+	NEWS 1.301
+	WBEMClient.java 1.21
+
+Wed May 23 05:03:44 CDT 2012	blaschke-oss
+
+	3525150 Remove CIMGetClassOp.getPropertyLis
+
+	CIMGetClassOp.java 1.6
+	NEWS 1.300
+
+Wed May 23 04:59:53 CDT 2012	blaschke-oss
+
+	3525145 Remove CIMDeleteNameSpaceOp.getNamespace
+
+	CIMDeleteNameSpaceOp.java 1.7
+	NEWS 1.299
+
+Wed May 23 04:55:23 CDT 2012	blaschke-oss
+
+	3525138 Remove WBEMConstants.PROTOCOL_CIMXML
+
+	WBEMConstants.java 1.15
+	NEWS 1.298
+
+Wed May 23 04:49:43 CDT 2012	blaschke-oss
+
+	3525135 Remove CIMResponse.isSuccessul
+
+	CIMResponse.java 1.11
+	NEWS 1.297
+
+Wed May 23 04:44:00 CDT 2012	blaschke-oss
+
+	3525128 Remove WBEMTransportException/WBEMAuthenticationException
+
+	WBEMTransportException.java deleted
+	WBEMAuthenticationException.java deleted
+	NEWS 1.296
+
+Mon May 21 21:31:23 CDT 2012	blaschke-oss
+
+	3523918 "java.io.IOException: Unexpected EOF" returned as HTTP 401
+
+	HttpClient.java 1.41
+	NEWS 1.295
+
+Mon May 21 21:22:12 CDT 2012	blaschke-oss
+
+	3522904 Add new API WBEMClientSBLIM.isActive()
+
+	NEWS 1.294
+	WBEMClientTest.java 1.2
+	testcases.wbem.txt 1.2
+	testcases.txt 1.18
+	WBEMClientCIMXML.java 1.74
+	unittest.html 1.19
+	WBEMClientSBLIM.java 1.10
+
+Wed May 09 09:26:52 CDT 2012	blaschke-oss
+
+	3521328 JSR48 1.0.0: remove WBEMClient associators and references
+
+	WBEMClient.java 1.20
+	NEWS 1.293
+	WBEMClientCIMXML.java 1.73
+
+Wed May 09 09:18:43 CDT 2012	blaschke-oss
+
+	3521119 JSR48 1.0.0: remove CIMObjectPath 2/3/4-parm ctors
+
+	Jsr48SfcbIndicationSample.java 1.3
+	Jsr48PullEnumSample.java 1.5
+	Jsr48PegasusIndicationSample.java 1.9
+	Jsr48OperationSample.java 1.13
+	Jsr48IndicationSample.java 1.13
+	EnumClasses.java 1.13
+	SVCTest.java 1.10
+	ParserTest.java 1.24
+	Common.java 1.8
+	CIMBuilder.java 1.21
+	WBEMConfigurationTest.java 1.18
+	CIMObjectPathTest.java 1.17
+	CIMInstanceTest.java 1.6
+	WBEMClientCIMXML.java 1.72
+	QualiDeclNode.java 1.11
+	LocalNameSpacePathNode.java 1.9
+	CIMXMLParserImpl.java 1.47
+	CIMClientXML_HelperImpl.java 1.42
+	CIMObjectPath.java 1.32
+	CIMClass.java 1.28
+	NEWS 1.292
+
+Wed May 09 08:36:13 CDT 2012	blaschke-oss
+
+	3521131 Sync up javax.* javadoc with JSR48 1.0.0 Final II
+
+	WBEMClient.java 1.19
+	CIMObjectPath.java 1.31
+	CIMDataType.java 1.18
+	NEWS 1.291
+
+Tue May 08 13:08:54 CDT 2012	blaschke-oss
+
+	3466280 get instance failure for CIM_IndicationSubscription
+
+	Bug3466280Test.java 1.2
+	testcases.parser.txt 1.9
+	ValueReferenceNode.java 1.9
+	CIMXMLParserImpl.java 1.46
+	unittest.html 1.18
+	NEWS 1.290
+	Bug3466280.xml 1.2
+
+Tue May 08 12:22:08 CDT 2012	blaschke-oss
+
+	3513228 Reliable Indications support can create lots of threads
+
+	ReliableIndicationHandler.java 1.5
+	CIMIndicationHandler.java 1.30
+	WBEMListenerSBLIM.java 1.18
+	NEWS 1.289
+
+Mon Apr 30 04:17:42 CDT 2012	blaschke-oss
+
+	3517503 Missing parm in CIMDataType ctor javadoc
+
+	CIMDataType.java 1.17
+	NEWS 1.288
+
+Sun Apr 29 08:47:58 CDT 2012	blaschke-oss
+
+	3516848 enumerateNamespaces() method to WBEMClient
+
+	WBEMClientCIMXML.java 1.71
+	WBEMClientSBLIM.java 1.9
+	NEWS 1.287
+
+Thu Apr 19 06:22:08 CDT 2012	blaschke-oss
+
+	3515180 JSR48 log dir/file should handle UNIX/Win separators
+
+	WBEMClientCIMXML.java 1.70
+	WBEMConfigurationTest.java 1.17
+	NEWS 1.286
+
+Thu Apr 19 06:11:24 CDT 2012	blaschke-oss
+
+	3514685 TCK: getProperty must return default values
+
+	WBEMClientCIMXML.java 1.69
+	WBEMConfigurationTest.java 1.16
+	NEWS 1.285
+
+Thu Apr 19 05:45:17 CDT 2012	blaschke-oss
+
+	3514537 TCK: execQueryInstances requires boolean, not Boolean
+
+	WBEMClientCIMXML.java 1.68
+	CIMClientXML_HelperImpl.java 1.41
+	WBEMClient.java 1.18
+	NEWS 1.284
+
+Mon Apr 16 08:21:50 CDT 2012	blaschke-oss
+
+	3513357 Handle multiple CDATAs in CimXmlSerializer
+
+	CimXmlSerializer.java 1.9
+	NEWS 1.283
+
+Mon Apr 16 08:14:40 CDT 2012	blaschke-oss
+
+	3513347 TCK: CIMObjectPath allows empty string
+
+	CIMObjectPath.java 1.30
+	NEWS 1.282
+
+Mon Apr 16 07:52:59 CDT 2012	blaschke-oss
+
+	3513343 TCK: CIMObjectPath must validate XML schema name
+
+	CIMObjectPath.java 1.29
+	NEWS 1.281
+
+Mon Apr 16 07:44:38 CDT 2012	blaschke-oss
+
+	3513349 TCK: CIMDataType must not accept null string
+
+	ValueRefArrayNode.java 1.10
+	EmbObjHandler.java 1.14
+	CIMObjectFactory.java 1.18
+	CIMXMLParserImpl.java 1.45
+	CIMHelper.java 1.9
+	NEWS 1.280
+	CIMDataTypeTest.java 1.4
+	CIMDataType.java 1.16
+
+Fri Apr 13 08:47:34 CDT 2012	blaschke-oss
+
+	3513353 TCK: CIMDataType arrays must have length >= 1
+
+	ValueArrayNode.java 1.10
+	QualifierNode.java 1.13
+	QualiDeclNode.java 1.10
+	Node.java 1.12
+	testcases.cim.txt 1.8
+	CIMDataTypeTest.java 1.2,1.3
+	EmbObjHandler.java 1.13
+	CIMXMLParserImpl.java 1.44
+	CIMHelper.java 1.7,1.8
+	unittest.html 1.17
+	CIMDataType.java 1.14,1.15
+	NEWS 1.279
+
+Fri Apr 13 07:59:50 CDT 2012	blaschke-oss
+
+	3511454 SAX nodes not reinitialized properly
+
+	ValueReferenceNode.java 1.8
+	SimpleExpReqNode.java 1.7
+	QualifiedNodeHandler.java 1.12
+	QualiDeclNode.java 1.9
+	MultiRspNode.java 1.8
+	MultiReqNode.java 1.8
+	MessageNode.java 1.7
+	IReturnValueNode.java 1.9
+	ValueRefArrayNode.java 1.9
+	ValueObjectWithPathNode.java 1.8
+	ValueObjectWithLocalPathNode.java 1.8
+	SimpleRspNode.java 1.10
+	SimpleReqNode.java 1.8
+	SimpleExpRspNode.java 1.8
+	NameSpacePathNode.java 1.10
+	MultiExpRspNode.java 1.9
+	MultiExpReqNode.java 1.8
+	MethodResponseNode.java 1.11
+	LocalInstancePathNode.java 1.9
+	InstancePathNode.java 1.10
+	IMethodResponseNode.java 1.9
+	ExpParamValueNode.java 1.7
+	ExpMethodResponseNode.java 1.8
+	ExpMethodCallNode.java 1.8
+	ClassPathNode.java 1.9
+	CIMNode.java 1.7
+	AbstractMethodCallNode.java 1.10
+	NEWS 1.278
+
+Fri Apr 13 07:19:14 CDT 2012	blaschke-oss
+
+	3510090 Fix CIMObjectPath.toString() inconsistencies
+
+	CIMObjectPathTest.java 1.16
+	MOF.java 1.21
+	unittest.html 1.16
+	CIMObjectPath.java 1.28
+	NEWS 1.277
+
+Fri Apr 13 06:55:42 CDT 2012	blaschke-oss
+
+	3510321 Handle CDATA in CimXmlSerializer
+
+	NEWS 1.276
+	CimXmlSerializer.java 1.8
+
+Mon Apr 02 15:59:10 CDT 2012	blaschke-oss
+
+	3505681 Add detailed release history HTML
+
+	overview.html 1.20
+	history.html 1.2
+	NEWS 1.275
+
+Mon Apr 02 15:41:12 CDT 2012	blaschke-oss
+
+	3500619 JSR48 1.0.0: CIMClass association/key clean up
+
+	CIMBuilder.java 1.20
+	ClassNode.java 1.10
+	CIMClass.java 1.27
+	NEWS 1.274
+
+Release 2.1.12
+==============
+
+Wed Mar 14 08:12:19 CDT 2012	blaschke-oss
+
+	3504344 Sync Experimental/HEAD branches
+
+	WBEMConfigurationTest.java 1.15
+	unittest.html 1.15
+	CIMElement.java 1.15
+	NEWS 1.272
+
+Wed Mar 14 07:20:44 CDT 2012	blaschke-oss
+
+	3504304 Rename socket timeout variables
+
+	HttpClient.java 1.40
+	NEWS 1.271
+
+Wed Mar 14 06:47:44 CDT 2012	blaschke-oss
+
+	3498482 Red Hat: Possible XML Hash DoS in sblim
+
+	NodeFactory.java 1.7
+	NEWS 1.270
+
+
+Wed Mar 14 06:33:40 CDT 2012	blaschke-oss
+
+	3496355 JSR48 1.0.0: add new WBEMClientConstants
+
+	WBEMClientCIMXML.java 1.67
+	WBEMConfigurationTest.java 1.14
+	WBEMClientConstants.java 1.7
+	NEWS 1.269
+
+Wed Mar 14 06:21:36 CDT 2012	blaschke-oss
+
+	3496385 JSR48 1.0.0: add WBEMListener get/setProperty
+
+	WBEMListenerSBLIM.java 1.17
+	WBEMListener.java 1.7
+	NEWS 1.268
+
+Wed Mar 14 06:13:22 CDT 2012	blaschke-oss
+
+	3496380 JSR48 1.0.0: add new WBEMListenerConstants
+
+	WBEMListenerConstants.java 1.2
+	NEWS 1.267
+
+Wed Mar 14 05:58:12 CDT 2012	blaschke-oss
+
+	3496349 JSR48 1.0.0: add CIMObjectPath getKeyValue
+
+	CIMObjectPathTest.java 1.15
+	CIMObjectPath.java 1.27
+	NEWS 1.266
+
+Wed Mar 14 05:47:21 CDT 2012	blaschke-oss
+
+	3496343 JSR48 1.0.0: deprecate WBEMClient associators and references
+
+	WBEMClient.java 1.17
+	NEWS 1.265
+
+Wed Mar 14 05:39:52 CDT 2012	blaschke-oss
+
+	3496301 Sync up javax.* javadoc with JSR48 1.0.0 Final
+
+	WBEMClientConstants.java 1.6
+	WBEMClient.java 1.16
+	PasswordCredential.java 1.12
+	WBEMException.java 1.14
+	CIMProperty.java 1.18
+	CIMDateTime.java 1.13
+	CIMClass.java 1.26
+	NEWS 1.264
+
+Wed Mar 14 04:54:13 CDT 2012	blaschke-oss
+
+	3495662 Invalid HTML from HttpConnectionHandler.writeError
+
+	HttpConnectionHandler.java 1.10
+	NEWS 1.263
+
+Wed Mar 14 04:47:52 CDT 2012	blaschke-oss
+
+	3477298 Error compiling JSR48
+
+	build.xml 1.47
+	NEWS 1.262
+
+Wed Mar 14 04:42:44 CDT 2012	blaschke-oss
+
+	3489638 PERF: Bottleneck in LogAndTraceBroker.java - getCaller()
+
+	LogAndTraceBroker.java 1.25
+	NEWS 1.261
+
+Tue Mar 13 10:46:28 CDT 2012	blaschke-oss
+
+	3492224 Need two different timeouts for Socket connections
+
+	WBEMConfigurationDefaults.java 1.29
+	WBEMConfiguration.java 1.41
+	HttpClient.java 1.39
+	WBEMConfigurationProperties.java 1.44
+	sblim-cim-client2.properties 1.27
+	NEWS 1.260
+
+Tue Mar 13 10:27:45 CDT 2012	blaschke-oss
+
+	3492214 Add a SenderIPAddress property indications
+
+	CIMIndicationHandler.java 1.29
+	WBEMConfigurationDefaults.java 1.28
+	WBEMConfiguration.java 1.40
+	WBEMConfigurationProperties.java 1.43
+	NEWS 1.259
+	sblim-cim-client2.properties 1.26
+
+Tue Mar 13 10:05:36 CDT 2012	blaschke-oss
+
+	3492246 Rename new indication trace property
+
+	WBEMConfigurationProperties.java 1.42
+	NEWS 1.258
+	sblim-cim-client2.properties 1.25
+
+Tue Mar 13 09:47:04 CDT 2012	blaschke-oss
+
+	3490355 TCK: Cannot instantiate WBEMClientFactory
+
+	WBEMClientFactory.java 1.12
+	NEWS 1.257
+
+Tue Mar 13 09:41:14 CDT 2012	blaschke-oss
+
+	3490032 TCK: WBEMException must validate error ID
+
+	WBEMException.java 1.13
+	NEWS 1.256
+
+Tue Mar 13 09:32:53 CDT 2012	blaschke-oss
+
+	3490009 TCK: Too many WBEMListenerFactory class methods
+
+	WBEMListenerFactory.java 1.11
+	NEWS 1.255
+
+Wed Feb 22 06:28:48 CST 2012	blaschke-oss
+
+	3484022 Turn reliable indication mode on and off based on SC/SN
+
+	ReliableIndicationHandler.java 1.4
+	RIHandlerTest.txt 1.2
+	CIMIndicationHandler.java 1.28
+	NEWS 1.254
+
+Mon Feb 20 12:59:36 CST 2012	blaschke-oss
+
+	3485074 An Indication trace request
+
+	CIMIndicationHandler.java 1.27
+	WBEMConfiguration.java 1.39
+	WBEMConfigurationProperties.java 1.41
+	sblim-cim-client2.properties 1.24
+	NEWS 1.253
+
+Mon Feb 20 12:37:50 CST 2012	blaschke-oss
+
+	3477087 Need Access to an Indication Sender's IP Address
+
+	CIMEventDispatcher.java 1.13
+	WBEMListenerSBLIM.java 1.16
+	IndicationListenerSBLIM.java 1.2
+	Jsr48PegasusIndicationSample.java 1.8
+	NEWS 1.252
+
+Mon Feb 20 11:47:55 CST 2012	blaschke-oss
+
+	3484014 Add LogAndTraceBroker.isLoggable for message/trace
+
+	unittest.html 1.14
+	LogAndTraceBrokerTest.java 1.9
+	LogAndTraceBroker.java 1.24
+	NEWS 1.251
+
+Mon Feb 20 11:13:34 CST 2012	blaschke-oss
+
+	3480115 Add Jsr48SfcbIndicationSample
+
+	Jsr48SfcbIndicationSample.java 1.2
+	Jsr48PegasusIndicationSample.java 1.7
+	NEWS 1.250
+
+Wed Jan 18 07:06:47 CST 2012	blaschke-oss
+
+	3469427 Fix broken HTML links
+
+	overview.html 1.19
+	WBEMServiceAdvertisement.java 1.7
+	NEWS 1.249
+
+Tue Jan 17 08:24:47 CST 2012	blaschke-oss
+
+	3469210 Include reliable indications in HTML
+
+	indications.html 1.12
+	NEWS 1.248
+
+Tue Jan 17 08:11:11 CST 2012	blaschke-oss
+
+	3469018 Properties not passed to CIMIndicationHandler
+
+	version.txt 1.4
+	LogAndTraceBroker.java 1.23
+	WBEMListenerSBLIM.java 1.15
+	Jsr48PegasusIndicationSample.java 1.6
+	build.xml 1.46
+	NEWS 1.247
+
+Release 2.1.11
+==============
+
+Thu Dec 15 06:27:49 CST 2011	blaschke-oss
+
+	3459036 Linked list for RI queue not efficient for many LDs
+
+	WBEMConfigurationDefaults.java 1.27
+	WBEMConfiguration.java 1.38
+	CIMIndicationHandler.java 1.26
+	WBEMConfigurationProperties.java 1.40
+	sblim-cim-client2.properties 1.23
+	NEWS 1.245
+
+Tue Dec 13 10:10:00 CST 2011	blaschke-oss
+
+	3444912 Client delay during SSL handshake
+
+	HttpClient.java 1.38
+	NEWS 1.244
+
+Mon Nov 07 06:05:49 CST 2011	blaschke-oss
+
+	3423064 Add UpdateExpiredPassword Header for Reqs from Java Client
+
+	WBEMClientCIMXML.java 1.66
+	NEWS 1.243
+
+Mon Nov 07 05:58:30 CST 2011	blaschke-oss
+
+	3411944 createJavaObject exception with hex uint
+
+	CIMXMLParserImpl.java 1.43
+	NEWS 1.242
+
+Mon Nov 07 05:54:54 CST 2011	blaschke-oss
+
+	3411879 TCK: CIM element value must match type
+
+	CIMValuedElement.java 1.14
+	CIMBuilder.java 1.19
+	NEWS 1.241
+
+Thu Oct 13 16:06:41 CDT 2011	blaschke-oss
+
+	3410126 TCK: CIM element name cannot be null
+
+	CIMElement.java 1.14
+	NEWS 1.240
+
+Release 2.1.10
+==============
+
+Wed Sep 14 19:30:13 CDT 2011	blaschke-oss
+
+	3409691 2.1.10 packaging issues: rpmbuild broken on Red Hat
+
+	build.xml 1.44
+	NEWS 1.238
+
+Thu Sep 08 09:42:15 CDT 2011	blaschke-oss
+
+	3406275 HEAD branch ONLY: sync with Experimental branch
+
+	WBEMClientCIMXML.java 1.65
+	Authority.java 1.13
+	CIMClientXML_HelperImpl.java 1.40
+	NEWS 1.237
+
+Thu Sep 08 08:03:52 CDT 2011	blaschke-oss
+
+	3400209 Highlighted Static Analysis (PMD) issues
+
+	CIMValuedElement.java 1.13
+	CIMTypedElement.java 1.13
+	CIMQualifierType.java 1.13
+	CIMQualifier.java 1.15
+	CIMProperty.java 1.17
+	CIMParameter.java 1.17
+	CIMMethod.java 1.19
+	CIMDateTimeInterval.java 1.23
+	CIMDateTimeAbsolute.java 1.21
+	CIMClassProperty.java 1.20
+	CIMClass.java 1.25
+	CIMArgument.java 1.11
+	TRC.java 1.6
+	LogAndTraceBroker.java 1.22
+	HttpClientPool.java 1.13
+	HttpClient.java 1.37
+	WBEMListenerSBLIM.java 1.14
+	NEWS 1.236
+
+Thu Sep 08 06:32:24 CDT 2011	blaschke-oss
+
+	3397922 support OctetString
+
+	unittest.html 1.13
+	testcases.cim.txt 1.7
+	CIMOctetStringTest.java 1.2
+	CIMOctetString.java 1.2
+	NEWS 1.235
+
+Tue Sep 06 06:20:54 CDT 2011	blaschke-oss
+
+	3390724 Problem with Reliable Indication support in the Listener
+
+	CIMIndicationHandler.java 1.25
+	NEWS 1.234
+
+Wed Aug 10 07:14:17 CDT 2011	blaschke-oss
+
+	3374012 Sblim client CIMObjectPath class defect for LLA format URL
+
+	CIMObjectPathTest.java 1.14
+	Authority.java 1.12
+	NEWS 1.233
+
+Wed Aug 10 07:03:30 CDT 2011	blaschke-oss
+
+	3376657 Get reliable indication properties once
+
+	ReliableIndicationHandler.java 1.3
+	CIMIndicationHandler.java 1.24
+	NEWS 1.232
+
+Wed Aug 10 06:52:13 CDT 2011	blaschke-oss
+
+	3374206 NullPointerException caused by Indication
+
+	CIMIndicationHandler.java 1.23
+	Jsr48PegasusIndicationSample.java 1.5
+	NEWS 1.231
+
+Thu Jul 21 11:34:28 CDT 2011	blaschke-oss
+
+	3323310 Need the ability to override certain Global Properties
+
+	HttpClient.java 1.36
+	NEWS 1.230
+	
+Release 2.1.9
+=============
+
+Tue Jun 14 08:33:49 CDT 2011	blaschke-oss
+
+	3311279 Repeated Instantiation of SAXParserFactory
+
+	CloseableIteratorSAX.java 1.15
+	NEWS 1.228
+
+Sat Jun 04 05:33:10 CDT 2011	blaschke-oss
+
+	3304953 Indication URL mapped to lower case
+
+	CIMIndicationHandler.java 1.22
+	NEWS 1.227
+
+Sat Jun 04 05:14:26 CDT 2011	blaschke-oss
+
+	3304058 Use same date format in change history
+
+	CIMIndicationHandler.java 1.21
+	XMLPullParser.java 1.23
+	ChunkedInputStream.java 1.11
+	MessageWriter.java 1.8
+	HttpHeader.java 1.11
+	CIMXMLBuilderImpl.java 1.34
+	NEWS 1.226
+
+Sat Jun 04 04:53:05 CDT 2011	blaschke-oss
+
+	3288721 Need the function of indication reordering
+
+	ReliableIndicationHandler.java 1.2
+	CIMIndicationHandler.java 1.20
+	WBEMConfigurationProperties.java 1.39
+	sblim-cim-client2.properties 1.22
+	NEWS 1.225
+
+Tue May 31 11:29:06 CDT 2011	blaschke-oss
+
+	3206904 Indication listener deadlock causes JVM to run out sockets
+
+	WBEMConfigurationDefaults.java 1.26
+	WBEMConfiguration.java 1.37
+	ThreadPool.java 1.13
+	HttpServerConnection.java 1.15
+	WBEMConfigurationProperties.java 1.38
+	sblim-cim-client2.properties 1.21
+	NEWS 1.224
+
+Tue May 31 09:23:12 CDT 2011	blaschke-oss
+
+	3297028 Instances contain CIMClassProperty with DOM parser
+
+	CIMXMLParserImpl.java 1.42
+	NEWS 1.223
+
+Tue May 31 09:06:47 CDT 2011	blaschke-oss
+
+	3293248 Support for CIM_ERROR instances within ERROR
+
+	CIMXMLParserImpl.java 1.41
+	enumerateClassesError.xml 1.2
+	EnumClasses.java 1.12
+	CloseableIteratorTest.java 1.7
+	ErrorNode.java 1.9
+	unittest.html 1.12
+	NEWS 1.222
+
+Tue May 10 15:24:27 CDT 2011	blaschke-oss
+
+	3281781 fail to parse Embedded Instance parameter
+
+	EmbObjHandler.java 1.12
+	NEWS 1.221
+
+Tue May 10 15:13:07 CDT 2011	blaschke-oss
+
+	3277928 CIM-XML tracing cannot be enabled in the field
+
+	WBEMClientCIMXML.java 1.64
+	WBEMConfiguration.java 1.36
+	WBEMConfigurationProperties.java 1.37
+	sblim-cim-client2.properties 1.20
+	NEWS 1.220
+
+Tue May 10 14:25:24 CDT 2011	blaschke-oss
+
+	3267429 Samples should close client
+
+	Jsr48PullEnumSample.java 1.4
+	Jsr48PegasusIndicationSample.java 1.4
+	Jsr48OperationSample.java 1.12
+	Jsr48IndicationSample.java 1.12
+	NEWS 1.219
+
+Tue May 10 14:12:01 CDT 2011	blaschke-oss
+
+	3252669 setXmlTraceStream blindly closes previous stream
+
+	LogAndTraceBroker.java 1.21
+	NEWS 1.218
+
+Mon Apr 11 13:12:23 CDT 2011	blaschke-oss
+
+	3235440 NullPointerException when socket factory returns null
+
+	HttpClient.java 1.35
+	NEWS 1.217
+
+Release 2.1.8
+=============
+
+Mon Mar 14 08:39:58 CDT 2011	blaschke-oss
+
+	3197423 Server authentication with PegasusLocalAuthInfo failing
+
+	WBEMClientCIMXML.java 1.63
+	WBEMConfigurationProperties.java 1.35
+	sblim-cim-client2.properties 1.19
+	NEWS 1.215
+
+Mon Mar 14 08:25:15 CDT 2011	blaschke-oss
+
+	3197627 testBasicConnect unit test fails on Windows
+
+	SSLConfigurationTest.java 1.7
+	NEWS 1.214
+
+Mon Mar 14 08:17:38 CDT 2011	blaschke-oss
+
+	3194700 Exception thrown on extrinsic methods
+
+	ReturnValueNode.java 1.11
+	NEWS 1.213
+
+Mon Mar 14 08:12:22 CDT 2011	blaschke-oss
+
+	3194680 Error in numeric keys
+
+	Test.java 1.12
+	IntegerValue.java 1.12
+	NEWS 1.212
+
+Mon Mar 14 07:52:51 CDT 2011	blaschke-oss
+
+	3195069 Need support to disable SSL Handshake
+
+	WBEMConfigurationDefaults.java 1.25
+	WBEMConfiguration.java 1.35
+	HttpClient.java 1.34
+	WBEMConfigurationProperties.java 1.34
+	sblim-cim-client2.properties 1.18
+	NEWS 1.211
+
+Fri Mar 11 07:46:42 CST 2011	blaschke-oss
+
+	3185763 Reliable indication support - Phase 1
+
+	CIMIndicationHandler.java 1.19
+	WBEMConfigurationDefaults.java 1.24
+	WBEMConfiguration.java 1.34
+	WBEMConfigurationProperties.java 1.33
+	sblim-cim-client2.properties 1.17
+	NEWS 1.210
+
+Fri Mar 11 07:08:17 CST 2011	blaschke-oss
+
+	3190335 Erroneous use of SystemName property in samples
+
+	Jsr48OperationSample.java 1.11
+	Jsr48IndicationSample.java 1.11
+	NEWS 1.209
+
+Mon Mar 07 08:27:45 CST 2011	blaschke-oss
+
+	3186176 XML response for indication not traced
+
+	CIMIndicationHandler.java 1.18
+	NEWS 1.208
+
+Mon Mar 07 08:20:04 CST 2011	blaschke-oss
+
+	3185833 missing newline when logging request/response
+
+	WBEMClientCIMXML.java 1.62
+	DebugInputStream.java 1.8
+	NEWS 1.207
+
+Mon Mar 07 08:12:03 CST 2011	blaschke-oss
+
+	3185824 Char16 definition includes whitespace
+
+	MOF.java 1.20
+	NEWS 1.206
+
+Mon Mar 07 08:00:41 CST 2011	blaschke-oss
+
+	3185818 indicationOccured URL incorrect
+
+	CIMIndicationHandler.java 1.17
+	HttpContentHandler.java 1.6
+	HttpConnectionHandler.java 1.9
+	Jsr48PegasusIndicationSample.java 1.3
+	NEWS 1.205
+
+Mon Mar 07 07:39:30 CST 2011	blaschke-oss
+
+	3182121 Add Jsr48PegasusIndicationSample
+
+	Jsr48PegasusIndicationSample.java 1.2
+	NEWS 1.204
+
+Tue Feb 15 06:42:35 CST 2011	blaschke-oss
+
+	3154232 EmbeddedObject misspelled in javadoc
+
+	version.txt 1.3
+	LogAndTraceBroker.java 1.20
+	CIMQualifiedElementInterfaceImpl.java 1.18
+	build.xml 1.43
+
+Release 2.1.7
+=============
+
+Mon Dec 06 13:43:02 CST 2010	blaschke-oss
+
+	3111718 org.sblim.cimclient SSL Code is using the wrong SSL Property
+
+	WBEMConfiguration.java 1.33
+	HttpSocketFactory.java 1.19
+	WBEMConfigurationProperties.java 1.32
+	sblim-cim-client2.properties 1.16
+	NEWS 1.202
+
+Mon Dec 06 13:22:30 CST 2010	blaschke-oss
+
+	3109824 Move Java link from Sun to Oracle
+
+	build.xml 1.42
+	NEWS 1.201
+
+Tue Nov 09 16:49:15 CST 2010	blaschke-oss
+
+	3078280 Fix for a null pointer exception in 1.3.9.1
+
+	WBEMConfiguration.java 1.32
+	NEWS 1.200
+
+Tue Nov 09 16:42:20 CST 2010	blaschke-oss
+
+	3062747 SblimCIMClient does not log all CIM-XML responces.
+
+	TimeStamp.java 1.7
+	DebugInputStream.java 1.7
+	CIMClientXML_HelperImpl.java 1.39
+	NEWS 1.199
+
+Release 2.1.6
+=============
+
+Wed Sep 15 06:21:25 CDT 2010	blaschke-oss
+
+	3046073 Performance hit due to socket conn. creation with timeout
+
+	WBEMConfigurationDefaults.java 1.23
+	WBEMConfiguration.java 1.31
+	HttpClient.java 1.33
+	WBEMConfigurationProperties.java 1.31
+	sblim-cim-client2.properties 1.15
+	NEWS 1.197
+
+Wed Sep 08 14:56:52 CDT 2010	blaschke-oss
+
+	3048749 Hex digit parsing logic error in XMLPullParser
+
+	XMLPullParser.java 1.22
+	NEWS 1.196
+
+Mon Aug 16 14:37:42 CDT 2010	blaschke-oss
+
+	3028518 Additional StringBuilder use
+
+	WBEMClientCIMXML.java 1.61
+	XMLPullParser.java 1.21
+	NEWS 1.195
+
+Mon Aug 16 12:36:24 CDT 2010	blaschke-oss
+
+	3027618 Close files/readers in finally blocks
+
+	LogAndTraceBroker.java 1.19
+	PegasusLocalAuthInfo.java 1.12
+	HttpSocketFactory.java 1.18
+	CIMVersion.java 1.3
+	NEWS 1.194
+
+Mon Aug 16 12:20:50 CDT 2010	blaschke-oss
+
+	3027615 Use CLASS_ARRAY_T instead of new CIMDataType(CLASS,0)
+
+	TVPair.java 1.14
+	EmbeddedObjParsingTest.java 1.20
+	CIMObjectFactory.java 1.17
+	CIMXMLParserImpl.java 1.40
+	NEWS 1.193
+
+Thu Jul 29 13:51:56 CDT 2010	blaschke-oss
+
+	3036683 HEAD branch ONLY: sync with Experimental branch
+
+	TVPair.java 1.13
+	EmbeddedObjParsingTest.java 1.19
+	CIMDateTimeAbsoluteTest.java 1.12
+	SerializeOption.java 1.5
+	SLPConfig.java 1.13
+	CIMEvent.java 1.7
+	EnumerateResponseDOM.java 1.4
+	ChunkedInputStream.java 1.10
+	WwwAuthInfo.java 1.13
+	HttpConnectionHandler.java 1.8
+	HttpClientPool.java 1.12
+	ValueObjectWithPathNode.java 1.7
+	NodeConstIf.java 1.10
+	LocalPathBuilder.java 1.7
+	CIMXMLParseException.java 1.7
+	CIMResponse.java 1.10
+	WBEMListenerSBLIM.java 1.13
+	WBEMClientFactory.java 1.11
+	RoleCredential.java 1.11
+	PasswordCredential.java 1.11
+	NEWS 1.192
+
+Thu Jul 29 09:01:25 CDT 2010	blaschke-oss
+
+	3027479 Dead store to local variable
+
+	MessageReader.java 1.7
+	CIMXMLParserImpl.java 1.39
+	CIMClientXML_HelperImpl.java 1.38
+	NEWS 1.191
+
+Thu Jul 29 08:53:07 CDT 2010	blaschke-oss
+
+	3027392 Nullcheck of value previously dereferenced
+
+	HttpServerConnection.java 1.14
+	NEWS 1.190
+
+Thu Jul 29 08:48:23 CDT 2010	blaschke-oss
+
+	3026417 XMLAttributeValue does not use iHash field
+
+	XMLPullParser.java 1.20
+	NEWS 1.189
+
+Thu Jul 29 08:33:25 CDT 2010	blaschke-oss
+
+	3026360 Handle unwritten fields
+
+	SLPConfig.java 1.12
+	HttpUrlConnection.java 1.9
+	NEWS 1.188
+
+Thu Jul 29 08:27:36 CDT 2010	blaschke-oss
+
+	3026316 XMLPullParser unused fields
+
+	XMLPullParser.java 1.19
+	NEWS 1.187
+
+Thu Jul 29 08:22:10 CDT 2010	blaschke-oss
+
+	3026311 Vacuous comparison of integer value
+
+	SLPConfig.java 1.11
+	NEWS 1.186
+
+Thu Jul 29 08:10:28 CDT 2010	blaschke-oss
+
+	3026302 CIMDateTimeInterval uses # constructor instead of valueOf
+
+	CIMDateTimeInterval.java 1.22
+	NEWS 1.185
+
+Wed Jul 28 15:21:04 CDT 2010	blaschke-oss
+
+	3023349 SLP uses # constructor instead of valueOf
+
+	ServiceTable.java 1.6
+	MessageTable.java 1.10
+	SLPInputStream.java 1.10
+	ServiceLocationAttribute.java 1.14
+	NEWS 1.184
+
+Wed Jul 28 15:12:42 CDT 2010	blaschke-oss
+
+	3023348 Listener uses # constructor instead of valueOf
+
+	WBEMListenerSBLIM.java 1.12
+	NEWS 1.183
+	
+Wed Jul 28 15:06:02 CDT 2010	blaschke-oss
+
+	3023340 CIMObjectFactory uses # constructor instead of valueOf
+
+	CIMObjectFactory.java 1.16
+	NEWS 1.182
+
+Wed Jul 28 15:00:40 CDT 2010	blaschke-oss
+
+	3023145 CharValue uses # constructor instead of valueOf
+
+	CharValue.java 1.10
+	NEWS 1.181
+
+Wed Jul 28 14:56:04 CDT 2010	blaschke-oss
+
+	3023143 CIMXMLParserImpl uses # constructor instead of valueOf
+
+	CIMXMLParserImpl.java 1.38
+	NEWS 1.180
+
+Wed Jul 28 14:49:30 CDT 2010	blaschke-oss
+
+	3023141 CIMObjectPath uses # constructor instead of valueOf
+
+	CIMObjectPath.java 1.26
+	NEWS 1.179
+
+Wed Jul 28 14:42:42 CDT 2010	blaschke-oss
+
+	3023135 DADescriptor equals/compareTo issue
+
+	DADescriptor.java 1.7
+	NEWS 1.178
+
+Wed Jul 28 14:37:57 CDT 2010	blaschke-oss
+
+	3023120 RequestDescriptor equals/compareTo issue
+
+	MessageTable.java 1.9
+	NEWS 1.177
+
+Wed Jul 28 14:30:53 CDT 2010	blaschke-oss
+
+	3023095 CIMQualifiedElementInterfaceImpl equals/hashCode issue
+
+	CIMQualifiedElementInterfaceImpl.java 1.17
+	NEWS 1.176
+
+Wed Jul 28 14:23:19 CDT 2010	blaschke-oss
+
+	3022554 Flushing socket ignores skip() return code
+
+	HttpClient.java 1.32
+	NEWS 1.175
+
+Wed Jul 28 14:17:41 CDT 2010	blaschke-oss
+
+	3022541 File descriptor leak in sample/unittest
+
+	TestSuite.java 1.13
+	NEWS 1.174
+	Jsr48IndicationStresser.java 1.13
+
+Wed Jul 28 14:11:02 CDT 2010	blaschke-oss
+
+	3022524 iSortedValueEntries not serializable in Serializable class
+
+	ServiceLocationAttribute.java 1.13
+	NEWS 1.173
+
+Wed Jul 28 14:03:09 CDT 2010	blaschke-oss
+
+	3022519 ServiceLocationAttribute.equals() compares same array
+
+	ServiceLocationAttribute.java 1.12
+	NEWS 1.172
+
+Wed Jul 28 13:56:13 CDT 2010	blaschke-oss
+
+	3022501 Possible integer overflow in getTotalUSec
+
+	CIMDateTimeAbsolute.java 1.20
+	NEWS 1.171
+
+Tue Jul 06 10:47:34 CDT 2010	blaschke-oss
+
+	3019252 Methods concatenate strings using + in a loop
+
+	WBEMClientCIMXML.java 1.60
+	XMLPullParser.java 1.18
+	NEWS 1.170
+
+Tue Jul 06 10:38:23 CDT 2010	blaschke-oss
+
+	3019214 SLP equals methods assume too much
+
+	SLPTest.java 1.10
+	ResponseCache.java 1.7
+	NEWS 1.169
+
+Tue Jul 06 10:32:05 CDT 2010	blaschke-oss
+
+	3018178 CIMDateTimeInterval clean up
+
+	CIMDateTimeInterval.java 1.21
+	NEWS 1.168
+
+Tue Jul 06 10:23:02 CDT 2010	blaschke-oss
+
+	3004779 TCK: CIMDataType not throwing IllegalArgumentException
+
+	CIMDataType.java 1.13
+	NEWS 1.167
+
+Tue Jul 06 10:15:20 CDT 2010	blaschke-oss
+
+	3004762 HTTPClient infinite loop for HTTP 407
+
+	HttpClient.java 1.31
+	NEWS 1.166
+
+Release 2.1.5
+=============
+
+Mon Jun 14 15:00:46 CDT 2010	blaschke-oss
+
+	3001333 CIMMethod class ignores propagated parameter
+
+	enumerateClasses.xml 1.8
+	CIMXMLBuilderImpl.java 1.33
+	CIMMethod.java 1.18
+	NEWS 1.164
+
+Mon Jun 14 14:52:13 CDT 2010	blaschke-oss
+
+	3001680 CIMQualifierElementInterfaceImpl changes qualifiers
+
+	enumerateClasses.xml 1.7
+	EnumClasses.java 1.11
+	CIMQualifiedElementInterfaceImpl.java 1.16
+	NEWS 1.163
+
+Mon Jun 14 14:22:16 CDT 2010	blaschke-oss
+
+	3001359 XMLPullParser.CharString equals() method broken
+
+	XMLPullParser.java 1.17
+	NEWS 1.162
+
+Mon Jun 14 14:14:03 CDT 2010	blaschke-oss
+
+	3001357 CIMDeleteNameSpaceOp name clash
+
+	CIMEnumNameSpaceOp.java 1.6
+	CIMDeleteNameSpaceOp.java 1.6
+	CIMCreateNameSpaceOp.java 1.6
+	NEWS 1.161
+
+Mon Jun 14 14:02:01 CDT 2010	blaschke-oss
+
+	3001353 HttpHeaderParser ignores return value of toLowerCase()
+
+	HttpHeaderParser.java 1.9
+	NEWS 1.160
+
+Mon Jun 14 13:55:33 CDT 2010	blaschke-oss
+
+	3001345 File handle leaks in HttpSocketFactory and LogAndTraceBroker
+
+	LogAndTraceBroker.java 1.18
+	HttpSocketFactory.java 1.17
+	NEWS 1.159
+
+Thu May 27 08:01:54 CDT 2010	blaschke-oss
+
+	3001243 Overview HTML out of date
+
+	overview.html 1.18
+	NEWS 1.158
+
+Thu May 27 07:45:45 CDT 2010	blaschke-oss
+
+	2997865 Infinite loop in HttpClient
+
+	NEWS 1.157
+	HttpClient.java 1.30
+
+Thu May 27 07:23:22 CDT 2010	blaschke-oss
+
+	2994776 http 401 gives CIM_ERR_FAILED instead of CIM_ERR_ACCESS_DENIED
+
+	NEWS 1.156
+	HttpClient.java 1.29
+
+Thu May 13 08:41:55 CDT 2010	blaschke-oss
+
+	2994252 CIMDateTimeInterval.getTotalMilliseconds() not unit tested
+
+	CIMDateTimeIntervalTest.java 1.9
+	unittest.html 1.11
+	NEWS 1.155
+
+Thu May 13 08:34:58 CDT 2010	blaschke-oss
+
+	2994249 CIMDateTimeInterval(long) calculates milliseconds
+
+	CIMDateTimeInterval.java 1.20
+	NEWS 1.154
+
+Thu May 13 08:30:11 CDT 2010	blaschke-oss
+
+	2992349 CIMDateTimeInterval hr/min/sec max is 23/59/59, not 24/60/60
+
+	CIMDateTimeInterval.java 1.19
+	NEWS 1.153
+
+Thu May 13 08:25:31 CDT 2010	blaschke-oss
+
+	2989424 TCK: CIMDateTimeInterval constructor
+
+	CIMDateTimeIntervalTest.java 1.8
+	CIMDateTimeInterval.java 1.18
+	NEWS 1.152
+
+Thu May 13 08:13:41 CDT 2010	blaschke-oss
+
+	2989367 CIMDateTimeInterval(long) constructor range wrong
+
+	CIMDateTimeIntervalTest.java 1.7
+	DTStringWriter.java 1.7
+	CIMDateTimeInterval.java 1.17
+	NEWS 1.151
+
+Thu May 13 07:50:17 CDT 2010	blaschke-oss
+
+	2990370 Development/unittest HTML out of date
+
+	indications.html 1.11
+	unittest.html 1.10
+	terminology.html 1.5
+	secure.html 1.7
+	logging.html 1.7
+	firststeps.html 1.7
+	embedded.html 1.6
+	discovery.html 1.7
+	development.html 1.6
+	configuration.html 1.10
+	bestpractise.html 1.9
+	NEWS 1.150
+
+Thu May 13 05:46:55 CDT 2010	blaschke-oss
+
+	2974884 Exception when attaching 2 CDRoms with invoke method
+
+	LocalClassPathNode.java 1.9
+	NEWS 1.149
+
+Fri Apr 23 07:53:53 CDT 2010	blaschke-oss
+
+	2978722 PasswordCredential(char[]) constructor is wrong
+
+	RoleCredential.java 1.10
+	PasswordCredential.java 1.10
+	NEWS 1.148
+
+Fri Apr 23 07:45:34 CDT 2010	blaschke-oss
+
+	2975989 TCK: CIMQualifierType constructor does not handle null
+
+	CIMQualifierType.java 1.12
+	NEWS 1.147
+
+Fri Apr 23 07:40:19 CDT 2010	blaschke-oss
+
+	2975975 TCK: CIMObjectPath(String) does not handle null
+
+	CIMObjectPath.java 1.25
+	NEWS 1.146
+
+Fri Apr 23 07:35:58 CDT 2010	blaschke-oss
+
+	2975917 TCK: CIMClass.getProperty() does not handle null property
+
+	CIMClass.java 1.24
+	NEWS 1.145
+
+Fri Apr 23 07:30:49 CDT 2010	blaschke-oss
+
+	2975885 TCK: CIMXXX.hasQualifierValue(null,null) returns true
+
+	CIMQualifiedElementInterfaceImpl.java 1.15
+	NEWS 1.144
+
+Fri Apr 23 07:24:15 CDT 2010	blaschke-oss
+
+	2973300 TCK: CIMDateTimeXXX.compareTo() does not handle null
+
+	CIMDateTimeInterval.java 1.16
+	CIMDateTimeAbsolute.java 1.19
+	NEWS 1.143
+
+Fri Apr 23 07:13:38 CDT 2010	blaschke-oss
+
+	2973230 TCK: UnsignedInteger64.equals() does not handle null
+
+	UnsignedInteger64.java 1.12
+	NEWS 1.142
+
+Fri Apr 23 07:08:22 CDT 2010	blaschke-oss
+
+	2973233 TCK: UnsignedIntegerNN.hashCode() not working
+
+	NEWS 1.141
+	UnsignedInteger8.java 1.15
+	UnsignedInteger32.java 1.14
+	UnsignedInteger16.java 1.14
+
+Fri Apr 23 05:55:36 CDT 2010	blaschke-oss
+
+	2972697 Fix spelling errors in HTML files
+
+	indications.html 1.10
+	unittest.html 1.9
+	terminology.html 1.4
+	secure.html 1.6
+	logging.html 1.6
+	embedded.html 1.5
+	discovery.html 1.6
+	development.html 1.5
+	configuration.html 1.9
+	bestpractise.html 1.8
+	NEWS 1.140
+
+
+Release 2.1.4
+=============
+
+Mon Mar 15 17:48:23 CDT 2010	blaschke-oss
+
+	2970881 Add property to control EmbeddedObject case
+
+	WBEMConfigurationDefaults.java 1.21
+	WBEMConfiguration.java 1.30
+	CIMXMLBuilderImpl.java 1.32
+	WBEMConfigurationProperties.java 1.29
+	sblim-cim-client2.properties 1.13
+	NEWS 1.139
+
+Mon Mar 15 07:08:22 CDT 2010	blaschke-oss
+
+	2942520 IPv6 link local address with scope_id including a dot not supported
+
+	WBEMClientCIMXML.java 1.59
+	CIMHelper.java 1.6
+	WBEMClientSBLIM.java 1.8
+	NEWS 1.137
+
+Mon Mar 15 06:43:00 CDT 2010	blaschke-oss
+
+	2964463 WBEMClient.initialize() throws wrong exception
+
+	WBEMClientCIMXML.java 1.58
+	CIMHelper.java 1.5
+	NEWS 1.136
+
+Mon Mar 15 06:35:28 CDT 2010	blaschke-oss
+
+	2963502 Add XML tracing to sample code
+
+	Jsr48OperationSample.java 1.10
+	NEWS 1.135
+
+Mon Mar 15 06:28:18 CDT 2010	blaschke-oss
+
+	2957387 EmbededObject XML attribute must not be all uppercases
+
+	EmbObjGetInstNegative.xml 1.3
+	EmbObjMethodRsp.xml 1.4
+	EmbObjGetInstance.xml 1.6
+	CIMXMLParserImpl.java 1.37
+	unittest.html 1.8
+	embedded.html 1.4
+	CIMXMLBuilderImpl.java 1.31
+	NEWS 1.134
+	QualifiedNodeHandler.java 1.11
+	EmbObjHandler.java 1.11
+	sblim-cim-client2.properties 1.12
+	WBEMConfigurationProperties.java 1.28
+
+Mon Mar 15 05:39:35 CDT 2010	blaschke-oss
+
+	2956716 Jsr48IndicationSample hardcoded namespace
+
+	Jsr48IndicationSample.java 1.10
+	NEWS 1.133
+
+Mon Mar 15 05:33:41 CDT 2010	blaschke-oss
+
+	2961592 Remove WBEMClient.setLocales() UnsupportedOperationException
+
+	WBEMClient.java 1.15
+	NEWS 1.132
+	WBEMClientCIMXML.java 1.57
+
+Mon Mar 15 05:23:58 CDT 2010	blaschke-oss
+
+	2959586 Sync up WBEMClient javadoc with JSR48 1.0.0
+
+	NEWS 1.131
+	WBEMClient.java 1.14
+
+Thu Mar 11 10:43:58 CST 2010	blaschke-oss
+
+	2959264 Sync up javax.client.* javadoc with JSR48 1.0.0
+
+	WBEMClientFactory.java 1.10
+	WBEMClientConstants.java 1.5
+	UserPrincipal.java 1.7
+	RolePrincipal.java 1.8
+	RoleCredential.java 1.9
+	PasswordCredential.java 1.9
+	EnumerateResponse.java 1.3
+	NEWS 1.130
+
+Thu Mar 11 09:29:31 CST 2010	blaschke-oss
+
+	2959240 Sync up javax.listener.* javadoc with JSR48 1.0.0
+
+	WBEMListenerFactory.java 1.10
+	WBEMListener.java 1.6
+	IndicationListener.java 1.5
+	NEWS 1.129
+
+Thu Mar 11 09:15:30 CST 2010	blaschke-oss
+
+	2959235 Update build.xml copyright year
+
+	build.xml 1.41
+	NEWS 1.128
+
+Thu Mar 11 09:08:41 CST 2010	blaschke-oss
+
+	2959039 Fix WBEMException.toString() logic
+
+	WBEMException.java 1.12
+	NEWS 1.127
+
+Thu Mar 11 09:02:09 CST 2010	blaschke-oss
+
+	2958990 Remove WBEMException.CIM_ERR_TYPE_MISMATCH
+
+	WBEMException.java 1.11
+	NEWS 1.126
+
+Thu Mar 11 08:53:35 CST 2010	blaschke-oss
+
+	2958941 Sync up javax.wbem.* javadoc with JSR48 1.0.0
+
+	WBEMException.java 1.10
+	CloseableIterator.java 1.10
+	NEWS 1.125
+
+Thu Mar 11 08:02:08 CST 2010	blaschke-oss
+
+	2913938 Duplicate CIM requests with identical message ID
+
+	NEWS 1.124
+	WBEMClientCIMXML.java 1.56
+
+Thu Feb 25 12:20:53 CST 2010	blaschke-oss
+
+	2946113 First steps code snippet has compile errors
+
+	indications.html 1.9
+	firststeps.html 1.6
+	discovery.html 1.5
+	bestpractise.html 1.7
+	NEWS 1.123
+
+Thu Feb 25 12:09:04 CST 2010	blaschke-oss
+
+	2944830 Fix spelling of checkGranurality()
+
+	CIMDateTimeInterval.java 1.15
+	NEWS 1.122
+
+Thu Feb 25 12:03:34 CST 2010	blaschke-oss
+
+	2944842 Missing thrown ArrayIndexOutOfBoundsException
+
+	CIMParameter.java 1.16
+	CIMMethod.java 1.17
+	CIMInstance.java 1.21
+	CIMClassProperty.java 1.19
+	CIMClass.java 1.23
+	NEWS 1.121
+
+Thu Feb 25 11:54:32 CST 2010	blaschke-oss
+
+	2944839 Remove redundant toString() methods
+
+	CIMClassProperty.java 1.18
+	CIMArgument.java 1.10
+	NEWS 1.120
+
+Thu Feb 25 11:49:21 CST 2010	blaschke-oss
+
+	2944833 Need private setValue in UnsignedInteger8
+
+	UnsignedInteger8.java 1.14
+	NEWS 1.119
+
+Thu Feb 25 11:43:15 CST 2010	blaschke-oss
+
+	2944826 getUTCOffset() incorrect if not significant field
+
+	CIMDateTimeAbsoluteTest.java 1.11
+	CIMDateTimeAbsolute.java 1.18
+	NEWS 1.118
+
+Thu Feb 25 11:33:09 CST 2010	blaschke-oss
+
+	2944824 Missing getXmlSchemaName() in CIMObjectPath
+
+	CIMObjectPathTest.java 1.13
+	CIMObjectPath.java 1.24
+	NEWS 1.117
+
+Thu Feb 18 16:08:09 CST 2010	blaschke-oss
+
+	2944219 Problem with pull operations using client against EMC CIMOM
+
+	CIMClientXML_HelperImpl.java 1.37
+	NEWS 1.116
+
+Thu Feb 18 15:50:01 CST 2010	blaschke-oss
+
+	2935258 Sync up javax.cim.* javadoc with JSR48 1.0.0
+
+	UnsignedInteger8.java 1.13
+	UnsignedInteger64.java 1.11
+	UnsignedInteger32.java 1.13
+	UnsignedInteger16.java 1.13
+	CIMValuedElement.java 1.12
+	CIMTypedElement.java 1.12
+	CIMScope.java 1.8
+	CIMQualifierType.java 1.11
+	CIMQualifier.java 1.14
+	CIMQualifiedElementInterface.java 1.8
+	CIMProperty.java 1.16
+	CIMParameter.java 1.15
+	CIMObjectPath.java 1.23
+	CIMNamedElementInterface.java 1.6
+	CIMMethod.java 1.16
+	CIMInstance.java 1.20
+	CIMFlavor.java 1.10
+	CIMElement.java 1.13
+	CIMDateTimeInterval.java 1.14
+	CIMDateTimeAbsolute.java 1.17
+	CIMDateTime.java 1.12
+	CIMDataType.java 1.12
+	CIMClassProperty.java 1.17
+	CIMClass.java 1.22
+	CIMArgument.java 1.9
+	NEWS 1.115
+
+Thu Jan 28 12:32:24 CST 2010	blaschke-oss
+
+	2930341 Sync up WBEMClientConstants with JSR48 1.0.0
+
+	WBEMConfigurationTest.java 1.13
+	WBEMClientCIMXML.java 1.55
+	WBEMConfigurationDefaults.java 1.20
+	WBEMConfiguration.java 1.29
+	WBEMConfigurationProperties.java 1.27
+	WBEMClientConstants.java 1.4
+	sblim-cim-client2.properties 1.11
+	NEWS 1.114
+
+Thu Jan 28 08:03:55 CST 2010	blaschke-oss
+
+	2927029 Unit test fails on Java 6
+
+	EmbeddedObjParsingTest.java 1.18
+	NEWS 1.113
+
+Thu Jan 21 08:28:38 CST 2010	blaschke-oss
+
+	2909941 RequestStateChange gives wrong exception/error id
+
+	WBEMClientCIMXML.java 1.54
+	NEWS 1.112
+	
+Thu Jan 21 08:16:43 CST 2010	blaschke-oss
+
+	2912490 NullPointerException when invoking getInstance
+
+	CIMXMLBuilderImpl.java 1.30
+	NEWS 1.111
+
+Release 2.1.3
+=============
+
+Mon Dec 14 11:49:15 CST 2009	blaschke-oss
+
+	2912104 Sync up javax.wbem.* with JSR48 1.0.0
+
+	WBEMException.java 1.9
+	CloseableIterator.java 1.9
+	NEWS 1.109
+
+Mon Dec 14 11:17:07 CST 2009	blaschke-oss
+
+	2907527 Fix SLP properties issues
+
+	SLPLimits.java 1.6
+	SLPConfigProperties.java 1.9
+	sblim-slp-client2.properties 1.4
+	NEWS 1.108
+
+Mon Dec 14 10:42:08 CST 2009	blaschke-oss
+
+	2901216 lost IndicationURL for IndcationListener.indicationOccured
+
+	CIMIndicationHandler.java 1.16
+	NEWS 1.107
+
+Thu Dec 10 08:39:30 CST 2009	blaschke-oss
+
+	2903373 Java doc incorrect
+
+	WBEMTransportException.java 1.7
+	WBEMAuthenticationException.java 1.6
+	NEWS 1.106
+
+Thu Dec 10 08:29:43 CST 2009	blaschke-oss
+
+	2900875 Javadoc should link to external Java5 Objects / APIs
+
+	build.xml 1.40
+	NEWS 1.105
+
+Wed Dec 02 10:36:32 CST 2009	blaschke-oss
+
+	2886829 JSR48 new APIs: referenceClasses & referenceInstances
+
+	WBEMClientCIMXML.java 1.53
+	CIMClientXML_HelperImpl.java 1.36
+	NEWS 1.104
+	WBEMClient.java 1.13
+
+Wed Dec 02 10:09:43 CST 2009	blaschke-oss
+
+	2899859 javax.wbem.client missing JSR48 credential/principal APIs
+
+	UserPrincipal.java 1.6
+	RolePrincipal.java 1.7
+	RoleCredential.java 1.8
+	NEWS 1.103
+
+
+Wed Dec 02 09:51:35 CST 2009	blaschke-oss
+
+	2899389 Password maximum length of 16?
+
+	PasswordCredential.java 1.8
+	NEWS 1.102
+
+Tue Nov 17 16:36:43 CST 2009	blaschke-oss
+
+	2888774 support POST retry on HTTP error 505
+
+	WBEMClientCIMXML.java 1.52
+	NEWS 1.101
+
+Tue Nov 17 16:11:18 CST 2009	blaschke-oss
+
+	2878054 Pull Enumeration Feature (PULL Parser)
+
+	WBEMClientCIMXML.java 1.51
+	EnumerateResponseSAX.java 1.4
+	EnumerateResponsePULL.java 1.2
+	CloseableIteratorPULL.java 1.19
+	EnumerateResponseDOM.java 1.3
+	CloseableIteratorGeneric.java 1.2
+	NEWS 1.100
+
+Tue Nov 17 14:07:07 CST 2009	blaschke-oss
+
+	2884718 Merge JSR48 and SBLIM client properties
+
+	WBEMConfigurationTest.java 1.12
+	WBEMClientCIMXML.java 1.50
+	WBEMConfigurationDefaults.java 1.19
+	WBEMClientConstants.java 1.3
+	sblim-cim-client2.properties 1.10
+	NEWS 1.99
+
+Tue Nov 17 13:39:34 CST 2009	blaschke-oss
+
+	2882448 Add WBEMClientConstants from JSR48
+
+	WBEMConfigurationTest.java 1.11
+	WBEMConstants.java 1.14
+	indications.html 1.8
+	firststeps.html 1.5
+	bestpractise.html 1.6
+	WBEMListenerFactory.java 1.9
+	WBEMClientFactory.java 1.9
+	WBEMClientConstants.java 1.2
+	Jsr48PullEnumSample.java 1.3
+	Jsr48OperationSample.java 1.9
+	Jsr48IndicationStresser.java 1.12
+	Jsr48IndicationSample.java 1.9
+	NEWS 1.98
+
+Tue Nov 17 12:21:08 CST 2009	blaschke-oss
+
+	2858933 JSR48 new APIs: associatorClasses & associatorInstances
+
+	WBEMClientCIMXML.java 1.49
+	CIMClientXML_HelperImpl.java 1.35
+	WBEMClient.java 1.12
+	NEWS 1.97
+
+Mon Oct 19 09:58:34 CDT 2009	blaschke-oss
+
+	2870455 Missing CLASS_ARRAY_T in CIMDataType
+
+	CIMDataType.java 1.11
+	NEWS 1.9
+
+Mon Oct 19 09:48:53 CDT 2009	blaschke-oss
+
+	2839595 SLP discovery fails on Unix IPv6 systems
+
+	DatagramRequester.java 1.10
+	NEWS 1.95
+
+Mon Oct 19 09:37:49 CDT 2009	blaschke-oss
+
+	2865222 enumerateQualifierTypes shouldn't require a class name
+
+	WBEMClientCIMXML.java 1.48
+	CIMClientXML_HelperImpl.java 1.34
+	NEWS 1.94
+
+Mon Oct 19 09:04:39 CDT 2009	blaschke-oss
+
+	2845128 CIMObjectPath.toString() misses host
+
+	CIMObjectPath.java 1.22
+	NEWS 1.93
+
+Mon Oct 19 08:55:08 CDT 2009	blaschke-oss
+
+	2846231 connection failure on CIMOM w/o user/pw
+
+	WBEMConfigurationDefaults.java 1.18
+	WBEMConfiguration.java 1.28
+	WBEMClientCIMXML.java 1.47
+	WBEMConfigurationProperties.java 1.26
+	sblim-cim-client2.properties 1.9
+	NEWS 1.92
+
+Mon Oct 19 07:52:18 CDT 2009	blaschke-oss
+
+	2860081 Pull Enumeration Feature (DOM Parser)
+
+	WBEMClientCIMXML.java 1.46
+	EnumerateResponseSAX.java 1.3
+	EnumerateResponseDOM.java 1.2
+	CloseableIteratorDOM.java 1.18
+	CIMXMLParserImpl.java 1.36
+	NEWS 1.91
+
+Release 2.1.2
+=============
+
+Mon Sep 14 13:13:04 CDT 2009	blaschke-oss
+
+	2849970 createVALUEARRAY fails to create reference array
+
+	CIMXMLBuilderImpl.java 1.29
+	NEWS 1.89
+
+Mon Sep 14 10:47:08 CDT 2009	raman_arora
+
+	2845211 Pulled Enumeration Support (SAX Parser)
+
+	WBEMClient.java 1.11
+	EnumerateResponse.java 1.2
+	CloseableIteratorSAX.java 1.14
+	ValueInstanceWithPathNode.java 1.2
+	SimpleRspNode.java 1.9
+	MethodResponseNode.java 1.10
+	IReturnValueNode.java 1.8
+	IMethodResponseNode.java 1.8
+	WBEMClientCIMXML.java 1.45
+	EnumerateResponseSAX.java 1.2
+	NodeFactory.java 1.6
+	NodeConstIf.java 1.9
+	CIMClientXML_HelperImpl.java 1.33
+	Jsr48PullEnumSample.java 1.2
+	NEWS 1.88
+
+Thu Aug 27 10:17:26 CDT 2009	blaschke-oss
+
+	2834838 Add interface to retrieve version number and product name
+
+	testcases.txt 1.17
+	CIMVersionTest.java 1.2
+	CIMVersion.java 1.2
+	NEWS 1.87
+
+Thu Aug 27 10:06:02 CDT 2009	blaschke-oss
+
+	2817962 socket creation connects w/o a timeout
+
+	HttpClientTest.java 1.7
+	HttpClient.java 1.28
+	NEWS 1.86
+
+Thu Aug 27 09:31:35 CDT 2009	blaschke-oss
+
+	2823494 Change Boolean constructor to static
+
+	EnumClasses.java 1.10
+	ValueTypeTest.java 1.7
+	TVPair.java 1.12
+	SVCTest.java 1.9
+	ParserTest.java 1.23
+	EmbeddedObjParsingTest.java 1.17
+	SLPStreamTest.java 1.10
+	ConvertTest.java 1.8
+	SLPTest.java 1.9
+	CIMMethodTest.java 1.7
+	SLPConfig.java 1.10
+	ServiceLocationAttribute.java 1.11
+	BooleanValue.java 1.9
+	QualifiedNodeHandler.java 1.10
+	KeyValueNode.java 1.11
+	CIMObjectFactory.java 1.15
+	CIMXMLParserImpl.java 1.35
+	CIMXMLBuilderImpl.java 1.28
+	CIMQualifiedElementInterfaceImpl.java 1.14
+	CIMClassProperty.java 1.16
+	CIMClass.java 1.21
+	NEWS 1.85
+
+Release 2.1.1
+=============
+
+Sun Jun 14 21:34:09 CDT 2009	blaschke-oss
+
+	2806362 Missing new CIMDateTimeAbsolute.getUTCOffset() method
+
+	CIMDateTimeAbsoluteTest.java 1.10
+	CIMDateTimeAbsolute.java 1.16
+	NEWS 1.83
+
+Thu Jun 11 21:33:23 CDT 2009	raman_arora
+
+	2797550 Make code compatible with JSR48 / Java Generics
+
+	EnumClasses.java 1.9
+	XMLHostStrTest.java 1.7
+	ValueTypeTest.java 1.6
+	TrailerTest.java 1.10
+	TVPair.java 1.11
+	SVCTest.java 1.8
+	ParserTest.java 1.22
+	ModifyInstanceTest.java 1.7
+	MethodRspChecker.java 1.9
+	MethodCallChecker.java 1.7
+	EmbeddedObjParsingTest.java 1.16
+	EmbeddedObjBuildingTest.java 1.9
+	Common.java 1.7
+	CloseableIteratorTest.java 1.6
+	CIMBuilder.java 1.18
+	CimXmlSerializerTest.java 1.7
+	Common.java 1.6
+	CIMParameterTest.java 1.6
+	CIMObjectPathTest.java 1.12
+	CIMMethodTest.java 1.6
+	CIMInstanceTest.java 1.5
+	CIMClassPropertyTest.java 1.6
+	CIMSetQualifierTypeOp.java 1.6
+	CIMInvokeMethodOp.java 1.7
+	CIMCreateQualifierTypeOp.java 1.6
+	WBEMClientCIMXML.java 1.44
+	CloseableIteratorSAX.java 1.13
+	CloseableIteratorPULL.java 1.18
+	CloseableIteratorDOM.java 1.17
+	MOF.java 1.19
+	SimpleRspNode.java 1.8
+	SimpleExpRspNode.java 1.7
+	QualifierNode.java 1.12
+	QualifiedNodeHandler.java 1.9
+	QualiDeclNode.java 1.8
+	PropertyNode.java 1.9
+	PropertyArrayNode.java 1.9
+	ParamValueNode.java 1.8
+	MethodResponseNode.java 1.9
+	MethodNode.java 1.10
+	LocalInstancePathNode.java 1.8
+	KeyBindingNode.java 1.7
+	InstancePathNode.java 1.9
+	InstanceNode.java 1.8
+	InstanceNameNode.java 1.8
+	IParamValueNode.java 1.8
+	ClassNode.java 1.9
+	AbstractSimpleRspNode.java 1.4
+	AbstractPropertyNode.java 1.9
+	AbstractParameterNode.java 1.9
+	AbstractParamValueNode.java 1.5
+	AbstractMethodCallNode.java 1.9
+	SAXHelper.java 1.6
+	LocalPathBuilder.java 1.6
+	CIMXMLParserImpl.java 1.34
+	CIMXMLBuilderImpl.java 1.27
+	CIMClientXML_HelperImpl.java 1.32
+	CIMQualifiedElementInterfaceImpl.java 1.13
+	CIMInstanceBuilder.java 1.14
+	GenericExts.java 1.5
+	package.html 1.4
+	WBEMClient.java 1.10
+	CIMValuedElement.java 1.11
+	CIMQualifierType.java 1.10
+	CIMQualifier.java 1.13
+	CIMQualifiedElementInterface.java 1.7
+	CIMProperty.java 1.15
+	CIMParameter.java 1.14
+	CIMObjectPath.java 1.21
+	CIMMethod.java 1.15
+	CIMInstance.java 1.19
+	CIMClassProperty.java 1.15
+	CIMClass.java 1.20
+	CIMArgument.java 1.8
+	Jsr48OperationSample.java 1.8
+	Jsr48IndicationStresser.java 1.11
+	Jsr48IndicationSample.java 1.8
+	Jsr48CimSample.java 1.7
+	CloseableIterator.java 1.8
+
+Tue Jun 09 09:40:58 CDT 2009	raman_arora
+
+	2797696 Input files use unchecked or unsafe operations
+
+	SLPStreamTest.java 1.9
+	SLPOutputStream.java 1.7
+	ServiceLocationAttribute.java 1.10
+	GenericExts.java 1.4
+
+Mon Jun 08 13:41:55 CDT 2009	raman_arora
+
+	2795671 Add Type to Comparable <T>
+
+	MessageTable.java 1.8
+	DADescriptor.java 1.6
+	ServiceLocationAttribute.java 1.9
+	UnsignedInteger8.java 1.12
+	UnsignedInteger64.java 1.10
+	UnsignedInteger32.java 1.12
+	UnsignedInteger16.java 1.12
+	CIMElement.java 1.12
+	CIMDateTimeInterval.java 1.13
+	CIMDateTimeAbsolute.java 1.15
+	CIMDateTime.java 1.11
+
+Mon Jun 08 13:25:01 CDT 2009	raman_arora
+
+	2799260 Fix left over @author tag from Java5 upgrade
+
+	All package.html files
+	unittest.html 1.7
+	terminology.html 1.3
+	secure.html 1.5
+	logging.html 1.5
+	indications.html 1.7
+	firststeps.html 1.4
+	embedded.html 1.3
+	discovery.html 1.4
+	development.html 1.4
+	configuration.html 1.8
+	bestpractise.html 1.5
+	overview.html 1.17
+
+Mon Jun 08 13:08:24 CDT 2009	raman_arora
+
+	2798931 - Fix spelling of WBEMListenerFactory.getPROTOCOLS()
+
+	WBEMListenerFactory.java 1.8
+
+Sun Jun 07 11:40:47 CDT 2009	blaschke-oss
+
+	2791860 Export instance to mof, wrong syntax
+
+	MOF.java 1.18
+	NEWS 1.82
+
+Thu May 21 10:47:56 CDT 2009	blaschke-oss
+
+	2787464 lang exception in Chinese env with Java client 2.0.7
+
+	MessageLoader.java 1.6
+	NEWS 1.81
+
+Thu May 21 10:31:49 CDT 2009	blaschke-oss
+
+	2784078 Code cleanup: messages_XX.properties
+
+	messages_en.properties 1.15
+	messages_de.properties 1.15
+	NEWS 1.80
+
+Tue Apr 28 14:42:44 CDT 2009	blaschke-oss
+
+	2763216 Code cleanup: visible spelling/grammar errors
+
+	TrailerTest.java 1.9
+	MethodRspChecker.java 1.8
+	EmbeddedObjParsingTest.java 1.15
+	Common.java 1.6
+	CloseableIteratorTest.java 1.5
+	TestCase.java 1.12
+	TCPThread.java 1.5
+	ServiceAgent.java 1.7
+	SLPConfigProperties.java 1.8
+	WBEMClientCIMXML.java 1.43
+	CloseableIteratorPULL.java 1.17
+	CloseableIteratorDOM.java 1.16
+	WBEMConstants.java 1.13
+	MOF.java 1.17
+	URIString.java 1.9
+	IntegerValue.java 1.11
+	CharValue.java 1.9
+	LogAndTraceBroker.java 1.17
+	PegasusLocalAuthInfo.java 1.11
+	HttpConnectionHandler.java 1.7
+	HttpClientMethod.java 1.8
+	HttpClient.java 1.27
+	AuthorizationInfo.java 1.9
+	ValueNamedInstanceNode.java 1.8
+	ResponseDestinationNode.java 1.7
+	MultiExpRspNode.java 1.8
+	MethodResponseNode.java 1.8
+	MethodNode.java 1.9
+	KeyValueNode.java 1.10
+	IMethodResponseNode.java 1.7
+	ExpMethodResponseNode.java 1.7
+	ErrorNode.java 1.8
+	XMLDefaultHandlerImpl.java 1.8
+	NodeConstIf.java 1.8
+	EmbObjHandler.java 1.10
+	CIMObjectFactory.java 1.14
+	CimXmlSerializer.java 1.7
+	CIMXMLParserImpl.java 1.33
+	CIMXMLBuilderImpl.java 1.26
+	CIMResponse.java 1.9
+	CIMClientXML_HelperImpl.java 1.31
+	DTStringReader.java 1.7
+	CIMInstanceBuilder.java 1.13
+	WBEMListenerSBLIM.java 1.11
+	WBEMConfigurationProperties.java 1.25
+	WBEMClientSBLIM.java 1.7
+	CIMQualifier.java 1.12
+	CIMProperty.java 1.14
+	CIMObjectPath.java 1.20
+	CIMFlavor.java 1.9
+	CIMElement.java 1.11
+	CIMDateTimeInterval.java 1.12
+	CIMClass.java 1.19
+	SLPFindAttributes.java 1.6
+	SLPClient.java 1.6
+	Jsr48OperationSample.java 1.7
+	Jsr48IndicationStresser.java 1.10
+	Jsr48IndicationSample.java 1.7
+	WBEMConfigurationTest.java 1.10
+	SLPStreamTest.java 1.8
+	ConvertTest.java 1.7
+	SLEnumerationImpl.java 1.9
+	RequestMessage.java 1.7
+	XMLPullParser.java 1.16
+	DiscovererSLP.java 1.10
+	AdvertisementCatalog.java 1.8
+	WBEMClient.java 1.9
+	NEWS 1.79
+
+Mon Apr 27 10:04:59 CDT 2009	blaschke-oss
+
+	2750520 Code cleanup from empty statement et al
+
+	HttpMethod.java 1.7
+	HttpHeaderParser.java 1.8
+	HttpClient.java 1.26
+	ValueRefArrayNode.java 1.8
+	AbstractMultiRspNode.java 1.5
+	WBEMException.java 1.8
+	UnsignedInteger8.java 1.11
+	UnsignedInteger64.java 1.9
+	UnsignedInteger32.java 1.11
+	UnsignedInteger16.java 1.11
+	CIMQualifierType.java 1.9
+	CIMQualifier.java 1.11
+	CIMProperty.java 1.13
+	CIMParameter.java 1.13
+	CIMMethod.java 1.14
+	CIMDateTimeInterval.java 1.11
+	CIMDateTimeAbsolute.java 1.13
+	CIMClassProperty.java 1.14
+	CIMClass.java 1.18
+	CIMArgument.java 1.7
+	NEWS 1.78
+
+Mon Apr 27 08:48:07 CDT 2009	blaschke-oss
+
+	2714989 Code cleanup from redundant null check et al
+
+	WwwAuthInfo.java 1.12
+	HttpClient.java 1.25
+	CIMXMLParserImpl.java 1.32
+	EmbeddedObjParsingTest.java 1.14
+	CIMIndicationHandler.java 1.15
+	XMLPullParser.java 1.15
+	ASCIIPrintStream.java 1.7
+	NEWS 1.77
+
+Release 2.1.0
+=============
+
+Wed Mar 11 09:03:37 CDT 2009	blaschke-oss
+
+	2680372 Eliminate duplicate entries in javadoc allclasses-frame.html
+
+	build.xml 1.39
+	NEWS 1.75
+
+Wed Mar 11 08:52:54 CDT 2009	blaschke-oss
+	
+	2641758 CIM Client does not recognize HTTP extension headers
+
+	HttpHeaderTest.java 1.6
+	HttpHeader.java 1.10
+	NEWS 1.74
+
+Wed Mar 11 08:36:38 CDT 2009	blaschke-oss
+
+	2620505 EmbeddedObject qualifier is missing from CIMClass
+
+	EmbeddedObjParsingTest.java 1.13
+	CIMQualifiedElementInterfaceImpl.java 1.12
+	NEWS 1.73
+
+Wed Mar 11 08:10:03 CDT 2009	blaschke-oss
+
+	2433593 isArray returns true for method parameters of type reference
+
+	ParameterRefArrayNode.java 1.9
+	NEWS 1.72
+
+Tue Mar 10 11:32:41 CDT 2009	raman_arora
+
+	2531371 Upgrade Java CIM Client 2.* to JDK 1.5 (Phase 2)
+
+	XMLHostStrTest.java 1.6
+	TVPair.java 1.10
+	SVCTest.java 1.6
+	ParserTest.java 1.20
+	MethodRspChecker.java 1.6
+	EmbeddedObjParsingTest.java 1.11
+	SLEnumerationImpl.java 1.7
+	ResultTable.java 1.8
+	ResponseCache.java 1.6
+	LocatorImpl.java 1.5
+	DatagramRequester.java 1.8
+	DACache.java 1.5
+	ServiceLocationEnumeration.java 1.7
+	ValueReferenceNode.java 1.6
+	ValueRefArrayNode.java 1.6
+	ValueObjectWithPathNode.java 1.6
+	ValueObjectWithLocalPathNode.java 1.6
+	ValueObjectNode.java 1.7
+	ValueNode.java 1.7
+	ValueNamedInstanceNode.java 1.6
+	ValueArrayNode.java 1.8
+	SimpleRspNode.java 1.6
+	QualifierNode.java 1.10
+	QualifiedNodeHandler.java 1.8
+	QualiDeclNode.java 1.6
+	PropertyReferenceNode.java 1.8
+	Node.java 1.10
+	NameSpacePathNode.java 1.8
+	MultiRspNode.java 1.6
+	MultiReqNode.java 1.6
+	MultiExpRspNode.java 1.6
+	MultiExpReqNode.java 1.6
+	MethodResponseNode.java 1.6
+	MethodNode.java 1.7
+	LocalNameSpacePathNode.java 1.7
+	LocalInstancePathNode.java 1.6
+	LocalClassPathNode.java 1.7
+	InstanceNode.java 1.6
+	InstanceNameNode.java 1.6
+	IReturnValueNode.java 1.6
+	ExpMethodCallNode.java 1.6
+	ErrorNode.java 1.6
+	ClassNode.java 1.7
+	AbstractPropertyNode.java 1.7
+	AbstractParameterNode.java 1.7
+	AbstractMethodCallNode.java 1.7
+	AbstractMessageNode.java 1.5
+	WBEMServiceAdvertisementSLPTest.java 1.6
+	DiscovererSLPTest.java 1.9
+	AdvertisementCatalogTest.java 1.8
+	ServiceTable.java 1.5
+	ServiceAgent.java 1.6
+	MessageTable.java 1.7
+	ServiceTypeRequest.java 1.6
+	ServiceTypeReply.java 1.7
+	ServiceRequest.java 1.6
+	ServiceReply.java 1.7
+	ServiceRegistration.java 1.6
+	ServiceDeregistration.java 1.6
+	ServiceAcknowledgment.java 1.7
+	SLPOutputStream.java 1.6
+	SLPInputStream.java 1.8
+	SAAdvert.java 1.7
+	RequestMessage.java 1.6
+	ReplyMessage.java 1.6
+	DADescriptor.java 1.5
+	DAAdvert.java 1.7
+	AttributeRequest.java 1.6
+	AttributeReply.java 1.7
+	SLPConfig.java 1.9
+	Net.java 1.5
+	AttributeHandler.java 1.5
+	AdvertiserImpl.java 1.7
+	ServiceLocationManager.java 1.7
+	ServiceLocationAttributeVerifier.java 1.6
+	ServiceLocationAttributeDescriptor.java 1.6
+	ServiceLocationAttribute.java 1.7
+	Locator.java 1.6
+	Advertiser.java 1.6
+	CIMIndicationHandler.java 1.14
+	CIMEventDispatcher.java 1.11
+	CIMEvent.java 1.6
+	WBEMConfiguration.java 1.27
+	ThreadPool.java 1.11
+	StringSorter.java 1.5
+	MOF.java 1.15
+	XMLPullParser.java 1.13
+	WwwAuthInfo.java 1.10
+	HttpSocketFactory.java 1.15
+	HttpServerConnection.java 1.13
+	HttpHeaderParser.java 1.7
+	HttpHeader.java 1.9
+	HttpClientPool.java 1.10
+	HttpClient.java 1.23
+	Challenge.java 1.6
+	AuthorizationInfo.java 1.7
+	AuthorizationHandler.java 1.6
+	WBEMServiceAdvertisementSLP.java 1.5
+	DiscovererSLP.java 1.8
+	XMLDefaultHandlerImpl.java 1.6
+	NodePool.java 1.5
+	NodeFactory.java 1.5
+	CIMObjectFactory.java 1.13
+	CIMXMLParserImpl.java 1.30
+	CIMResponse.java 1.8
+	CIMRequest.java 1.7
+	CIMMessage.java 1.8
+	CIMClientXML_HelperImpl.java 1.30
+	WBEMServiceAdvertisement.java 1.5
+	AdvertisementCatalog.java 1.7
+	WBEMListenerSBLIM.java 1.9
+	LogAndTraceManager.java 1.7
+	GenericExts.java 1.2
+	UnsignedInteger8.java 1.9
+	UnsignedInteger64.java 1.7
+	UnsignedInteger32.java 1.9
+	UnsignedInteger16.java 1.9
+	CIMInstance.java 1.17
+	CIMElement.java 1.9
+	CIMDateTime.java 1.9
+	CIMClass.java 1.16
+	slpMain.java 1.5
+	SLPTool.java 1.6
+	SLPRegistration.java 1.5
+	SLPFindServices.java 1.5
+	SLPFindServiceTypes.java 1.5
+	SLPFindAttributes.java 1.5
+	SLPClient.java 1.5
+	Jsr48OperationSample.java 1.6
+	Jsr48IndicationStresser.java 1.8
+	sblim-cim-client2.properties 1.8
+	build.xml 1.38
+	README 1.6
+	NEWS 1.71
+	SLPStreamTest.java 1.7
+	ConvertTest.java 1.6
+	SLPTest.java 1.8
+	LogAndTraceBrokerTest.java 1.7
+	HttpClientTest.java 1.5
+	CIMObjectPathTest.java 1.10
+	CIMDateTimeAbsoluteTest.java 1.8
+	TestSuite.java 1.11
+	TestCase.java 1.11
+	GenericUTestExts.java 1.2
+	CIMSingleResultOperation.java 1.6
+	WBEMClientCIMXML.java 1.42
+	CloseableIteratorDOM.java 1.15
+	KeyValuePairs.java 1.6
+	LogAndTraceBroker.java 1.15
+	ChunkedOutputStream.java 1.6
+	CIMQualifiedElementInterfaceImpl.java 1.11
+	CIMInstanceBuilder.java 1.11
+	CIMElementSorter.java 1.9
+	CloseableIterator.java 1.7
+
+Thu Mar 05 11:48:44 CST 2009	raman_arora
+
+	2573575 Fix build.xml to allow file names >100 chars
+
+	build.xml 1.37
+	
+Thu Mar 05 10:59:20 CST 2009	raman_arora
+
+	2524131 Upgrade Java CIM Client 2.* to JDK 1.5 (Phase 1)
+	
+	All .java files
+	GenericExts.java 1.1
+	GenericUTestExts.java 1.1
+	build.xml 1.36
+	overview.html 1.16
+	development.html 1.3
+
+Release 2.0.9
+=============
+
+Thu Dec 11 11:48:50 CST 2008	blaschke-oss
+
+	2414503 SLPConfig : parseList not returning populated list
+
+	SLPConfig.java 1.7
+	sblim-slp-client2.properties 1.3
+	NEWS 1.69
+
+Thu Dec 11 11:41:52 CST 2008	blaschke-oss
+
+	2412389 Test case failure: Java5 Complier : CIMDateTimeAbsoluteTest
+
+	CIMDateTimeAbsoluteTest.java 1.6
+	NEWS 1.68
+
+Thu Dec 11 11:32:20 CST 2008	blaschke-oss
+
+	2382763 HTTP header field Accept-Language does not include *
+
+	WBEMClientCIMXML.java 1.40
+	NEWS 1.67
+
+Thu Dec 11 11:18:28 CST 2008	blaschke-oss
+
+	2372030 Add property to control synchronized SSL handshaking
+
+	WBEMConfigurationDefaults.java 1.16
+	WBEMConfiguration.java 1.25
+	HttpClient.java 1.21
+	WBEMConfigurationProperties.java 1.22
+	sblim-cim-client2.properties 1.7
+	NEWS 1.66
+
+Fri Dec 05 08:28:57 CST 2008	blaschke-oss
+
+	2315151 Jsr48IndicationSample does not work
+
+	Jsr48IndicationSample.java 1.5
+	NEWS 1.65
+
+Mon Nov 24 09:56:54 CST 2008	blaschke-oss
+
+	2227442 Add missing serialVersionUID
+
+	CIMTypedElement.java 1.9
+	CIMElement.java 1.7
+	CIMDateTime.java 1.7
+	NEWS 1.64
+
+Mon Nov 24 09:40:40 CST 2008	blaschke-oss
+
+	2210455 Enhance javadoc, fix potential null pointers
+
+	SLPOutputStream.java 1.4
+	HttpServerConnection.java 1.11
+	NodeConstIf.java 1.5
+	CIMXMLBuilderImpl.java 1.23
+	NEWS 1.63
+
+Mon Nov 24 09:10:37 CST 2008	blaschke-oss
+
+	2204488 Fix / clean code to remove compiler warnings
+
+	TrailerTest.java 1.7
+	SVCTest.java 1.4
+	ParserTest.java 1.18
+	ModifyInstanceTest.java 1.5
+	MethodCallChecker.java 1.4
+	EmbeddedObjParsingTest.java 1.9
+	EmbeddedObjBuildingTest.java 1.7
+	ConvertTest.java 1.4
+	ResultTable.java 1.6
+	MessageTable.java 1.5
+	CIMXMLParserImpl.java 1.28
+	CIMXMLBuilderImpl.java 1.22
+	CIMClientXML_HelperImpl.java 1.28
+	WBEMClientFactory.java 1.6
+	CIMInstance.java 1.15
+	CIMDateTimeInterval.java 1.8
+	CIMDateTime.java 1.6
+	NEWS 1.62
+	WBEMConfigurationTest.java 1.8
+	SLPTest.java 1.6
+	AdvertisementCatalogTest.java 1.6
+	CIMObjectPathTest.java 1.8
+	CIMDateTimeIntervalTest.java 1.4
+	CIMDateTimeAbsoluteTest.java 1.5
+	SLPMessage.java 1.5
+	SLPInputStream.java 1.6
+	ServiceURL.java 1.5
+	ServiceLocationManager.java 1.5
+	CIMEventDispatcher.java 1.9
+	WBEMConfiguration.java 1.24
+	MOF.java 1.13
+	URI.java 1.13
+	NamespacePath.java 1.9
+	XMLPullParser.java 1.11
+	LogAndTraceBroker.java 1.13
+	ChunkedInputStream.java 1.7
+	PegasusLocalAuthInfo.java 1.8
+	HttpUrlConnection.java 1.6
+	HttpSocketFactory.java 1.13
+	HttpServerMethod.java 1.5
+	HttpServerConnection.java 1.10
+	HttpMethod.java 1.5
+	HttpHeader.java 1.7
+	HttpClientMethod.java 1.5
+	HttpClient.java 1.20
+	QualifierNode.java 1.8
+	NodeConstIf.java 1.4
+	EmbObjHandler.java 1.7
+	CIMInstanceBuilder.java 1.9
+	WBEMListenerSBLIM.java 1.7
+	slpMain.java 1.3
+	SLPRegistration.java 1.3
+	SLPFindServices.java 1.3
+	SLPFindServiceTypes.java 1.3
+	SLPFindAttributes.java 1.3
+	SLPDeregistration.java 1.3
+	SLPClient.java 1.3
+	Jsr48IndicationSample.java 1.4
+	Jsr48CimSample.java 1.5
+
+Release 2.0.8
+=============
+
+Thu Sep 11 09:52:44 CDT 2008	blaschke-oss
+
+	2093708 HTTP 400 - Bad Request, CIMError: request-not-valid
+
+	CIMXMLBuilderImpl.java 1.21
+	NEWS 1.60
+
+Thu Sep 11 09:34:38 CDT 2008	blaschke-oss
+
+	2087969 VALUE.ARRAY used in request for array of references
+
+	CIMXMLBuilderImpl.java 1.20
+	NEWS 1.59
+
+Thu Sep 11 09:22:17 CDT 2008	blaschke-oss
+
+	2087975 can't set the pPropagated in WBEMClient.enumerateClasses()
+
+	WBEMClientCIMXML.java 1.39
+	NEWS 1.58
+
+Thu Sep 11 09:10:41 CDT 2008	blaschke-oss
+
+	2038305 SAXException SBLIM Java Client V2.0.7
+
+	Node.java 1.8
+	NEWS 1.57
+
+Thu Aug 14 16:31:28 CDT 2008	blaschke-oss
+
+	2034342 HttpClient not closed on cimclient close
+
+	WBEMClientCIMXML.java 1.38
+	NEWS 1.56
+
+Thu Aug 14 15:55:22 CDT 2008	blaschke-oss
+
+	2013628 SAXException when listing classes
+
+	QualifierNode.java 1.7
+	QualifiedNodeHandler.java 1.6
+	NEWS 1.55
+
+Tue Jul 22 10:49:48 CDT 2008	raman_arora
+
+	2002599 M-POST not supported in java-client 
+
+	WBEMClientCIMXML.java 1.37
+
+Release 2.0.7
+=============
+
+Mon Jun 30 08:54:05 CDT 2008	blaschke-oss
+
+	1963102 NullPointerException when getting qualifiers
+
+	CIMQualifiedElementInterfaceImpl.java 1.9
+	NEWS 1.53
+	
+Mon Jun 30 08:21:26 CDT 2008	blaschke-oss
+
+	2003590 Change licensing from CPL to EPL	
+
+	All .java files
+	All package.html files
+	version.txt 1.2
+	unittest.html 1.6
+	terminology.html 1.2
+	secure.html 1.4
+	logging.html 1.4
+	indications.html 1.6
+	firststeps.html 1.3
+	embedded.html 1.2
+	discovery.html 1.3
+	development.html 1.2
+	configuration.html 1.7
+	bestpractise.html 1.4
+	sblim-cim-client2.spec 1.8
+	sblim-cim-client2.properties 1.6
+	build.xml 1.35
+	README 1.5
+	NEWS 1.52
+	COPYING 1.2
+	cimclient.properties 1.2
+	overview.html 1.15
+	
+Release 2.0.6
+=============
+
+Thu Jun 12 16:15:20 CDT 2008	blaschke-oss
+
+	1992337 2.0.6 packaging issues
+
+	build.xml 1.34
+
+Thu Jun 12 09:56:15 CDT 2008	blaschke-oss
+
+	1944875 Indications with embedded objects are not accepted
+
+	CIMXMLParserImpl.java 1.26
+	NEWS 1.50
+
+Thu Jun 12 08:06:20 CDT 2008	blaschke-oss
+
+	1917321 CIMObjectPath("CIM_Memory","/root/ibmsd") broken
+
+	CIMObjectPath.java 1.16
+	NEWS 1.49
+
+Thu May 29 19:01:14 CDT 2008	blaschke-oss
+
+	1963762 connection leak in WBEMClientCIMXML
+
+	WBEMClientCIMXML.java 1.35
+	NEWS 1.48
+
+Fri May 16 10:04:16 CDT 2008	blaschke-oss
+
+	1949000 setLocales() is empty
+
+	WBEMClientCIMXML.java 1.34
+	NEWS 1.47
+
+Fri May 16 09:55:44 CDT 2008	blaschke-oss
+
+	1950819 SLP error: "java.io.IOException" on Linux and IPv6
+
+	DatagramRequester.java 1.5
+	NEWS 1.46
+
+Fri May 16 09:43:31 CDT 2008	blaschke-oss
+
+	1949918 malformed service URL crashes SLP discovery
+
+	Affected Files:
+	SLPTest.java 1.4
+	ServiceTypeReply.java 1.4
+	ServiceReply.java 1.4
+	ServiceAcknowledgment.java 1.4
+	SLPInputStream.java 1.4
+	SAAdvert.java 1.4
+	ReplyMessage.java 1.3
+	DAAdvert.java 1.4
+	AttributeReply.java 1.4
+	ServiceLocationEnumeration.java 1.4
+	NEWS 1.45
+	SLPStreamTest.java 1.4
+	SLEnumerationImpl.java 1.4
+	ResultTable.java 1.4
+	DatagramRequester.java 1.4
+
+Fri May 16 08:37:59 CDT 2008	blaschke-oss
+
+	1931621 CIMDateTimeAbsolute(Calendar) does not respect DST
+
+	CIMDateTimeAbsoluteTest.java 1.3
+	CIMDateTimeAbsolute.java 1.9
+	NEWS 1.44
+
+Fri May 16 08:18:33 CDT 2008	blaschke-oss
+
+	1931216 In HTTPClient need to get status before closing connection
+
+	HttpClient.java 1.18
+	NEWS 1.43
+
+Fri May 16 07:59:32 CDT 2008	blaschke-oss
+
+	1917309 "/root:__NAMESPACE" not valid CIMObjectPath
+
+	CIMObjectPathTest.java 1.6
+	URI.java 1.11
+	NEWS 1.42
+
+Release 2.0.5
+=============
+	
+Wed Mar 12 08:35:33 CDT 2008	blaschke-oss
+
+    1911400 Source RPM file on SourceForge is broken
+
+    SLPDefaults.java 1.4
+    SLPConfigProperties.java 1.4
+    sblim-slp-client2.properties 1.2
+    sblim-cim-client2.spec 1.5
+    build.xml 1.33
+    README 1.4
+    NEWS 1.40
+	
+Release 2.0.4
+=============
+
+Mon Feb 25 14:58:04 CET 2008	lupusalex
+
+	1892046 Basic/digest authentication problem for Japanese users
+
+	WwwAuthInfo.java 1.7
+	HttpClient.java 1.17
+	NEWS 1.38
+
+Mon Feb 25 14:57:07 CET 2008	lupusalex
+
+	1849235 DTStringWriter.writeSigned parameter pDigits is not used
+
+	DTStringWriter.java 1.4
+	NEWS 1.37
+
+Mon Feb 25 14:56:03 CET 2008	lupusalex
+
+	1855726 - CIMInstance.deriveInstance is setting wrong CIMObjectPath
+
+	CIMInstance.java 1.13
+	NEWS 1.36
+
+Mon Feb 25 14:44:34 CET 2008	lupusalex
+
+	Workaorund for Ant 1.7 bug
+
+	build.xml 1.31
+
+Mon Feb 25 14:43:05 CET 2008	lupusalex
+
+	1892103 - SLP improvements
+
+	MsgHeader.java 1.3
+	DAAdvert.java 1.3
+	RequestMessage.java 1.3
+	ServiceTypeReply.java 1.3
+	ServiceRequest.java 1.3
+	ServiceRegistration.java 1.3
+	ServiceDeregistration.java 1.3
+	AttributeReply.java 1.3
+	SLEnumerationImpl.java 1.3
+	ResultTable.java 1.3
+	ResponseCache.java 1.3
+	ServiceTypeRequest.java 1.3
+	ServiceReply.java 1.3
+	ServiceAcknowledgment.java 1.3
+	SerializeOption.java 1.2
+	SLPMessage.java 1.3
+	SLPInputStream.java 1.3
+	SAAdvert.java 1.3
+	AttributeRequest.java 1.3
+	testcases.debug.txt 1.4
+	SLPStreamTest.java 1.3
+	SLPTest.java 1.3
+	TCPRequester.java 1.3
+	DatagramRequester.java 1.3
+	ServiceAgent.java 1.3
+	MessageTable.java 1.3
+	DatagramThread.java 1.3
+	TRC.java 1.3
+	AdvertiserImpl.java 1.4
+	DiscovererSLP.java 1.5
+	SLPTool.java 1.3
+	ServiceLocationException.java 1.4
+	NEWS 1.35
+
+Fri Feb 15 16:22:50 CET 2008	ebak
+
+	file SerializeOption.java was initially added on branch Experimental.
+
+	SerializeOption.java 1.1
+
+Sat Dec 22 21:08:22 CET 2007	lupusalex
+
+	ChangeLog updated
+
+	ChangeLog 1.3
+
+Thu Dec 20 15:39:50 CET 2007	lupusalex
+
+	2.0.4 Release work
+
+	NEWS 1.34
+
+Thu Dec 20 15:20:50 CET 2007	lupusalex
+
+	1804402 IPv6 ready SLP
+
+	SLPStringTest.java 1.2
+	SLPStreamTest.java 1.2
+	ConvertTest.java 1.2
+	SLPTest.java 1.2
+	ServiceURLTest.java 1.2
+
+Thu Dec 20 14:55:11 CET 2007	lupusalex
+
+	1804402 IPv6 ready SLP
+
+	TRC.java 1.2
+	SLPString.java 1.2
+	Net.java 1.2
+	IPv6MulticastAddressFactory.java 1.2
+	Convert.java 1.2
+	TCPRequester.java 1.2
+	SLEnumerationImpl.java 1.2
+	ResultTable.java 1.2
+	ResponseCache.java 1.2
+	LocatorImpl.java 1.2
+	DatagramRequester.java 1.2
+	DACache.java 1.2
+	TCPThread.java 1.2
+	ServiceTable.java 1.2
+	ServiceAgent.java 1.2
+	RecieverThread.java 1.2
+	MessageTable.java 1.2
+	DatagramThread.java 1.2
+	Util.java 1.2
+	ServiceTypeRequest.java 1.2
+	ServiceTypeReply.java 1.2
+	ServiceRequest.java 1.2
+	ServiceReply.java 1.2
+	ServiceRegistration.java 1.2
+	ServiceDeregistration.java 1.2
+	ServiceAcknowledgment.java 1.2
+	SLPOutputStream.java 1.2
+	SLPMessage.java 1.2
+	SLPInputStream.java 1.2
+	SAAdvert.java 1.2
+	RequestMessage.java 1.2
+	ReplyMessage.java 1.2
+	MsgHeader.java 1.2
+	MsgFactory.java 1.2
+	FunctionIDs.java 1.2
+	DADescriptor.java 1.2
+	DAAdvert.java 1.2
+	AttributeRequest.java 1.2
+	AttributeReply.java 1.2
+	AttributeHandler.java 1.2
+	SLPLimits.java 1.3
+	SLPDefaults.java 1.3
+	SLPConfig.java 1.5
+	AdvertiserImpl.java 1.3
+	TemplateRegistry.java 1.3
+	ServiceURL.java 1.3
+	ServiceType.java 1.3
+	ServiceLocationManager.java 1.3
+	ServiceLocationException.java 1.3
+	ServiceLocationEnumeration.java 1.3
+	ServiceLocationAttributeVerifier.java 1.3
+	ServiceLocationAttributeDescriptor.java 1.3
+	ServiceLocationAttribute.java 1.4
+	SLPConfigProperties.java 1.3
+	Locator.java 1.3
+	Advertiser.java 1.3
+
+Thu Dec 20 14:27:49 CET 2007	lupusalex
+
+	Sync HEAD and Experimental
+
+	mykey.cer 1.2
+	WBEMClientCIMXML.java 1.33
+	XMLHostStr.java 1.5
+	ParameterRefArrayNode.java 1.5
+	CIMQualifiedElementInterfaceImpl.java 1.7
+	SLPTool.java 1.2
+	sblim-cim-client2.properties 1.5
+
+Thu Dec 20 13:52:55 CET 2007	lupusalex
+
+	1804402 IPv6 ready SLP
+
+	testcases.txt 1.16
+	testcases.slp.txt 1.2
+	testcases.slp.internal.txt 1.2
+	testcases.discovery.txt 1.2
+	testcases.debug.txt 1.3
+	testcases.cim.txt 1.6
+	DiscovererSLPTest.java 1.6
+	DiscovererSLP.java 1.4
+	NEWS 1.33
+
+Thu Dec 20 13:42:33 CET 2007	lupusalex
+
+	1832635 less strict parsing for IPv6 hostnames
+
+	XMLHostStr.java 1.4
+	XMLHostStrTest.java 1.2
+	testcases.util.txt 1.2
+	testcases.txt 1.15
+	NEWS 1.32
+
+Thu Dec 20 13:37:57 CET 2007	lupusalex
+
+	1848607 Strict EmbeddedObject types 1827728 embeddedInstances: attribute EmbeddedObject not set
+
+	EnumClasses.java 1.6
+	EmbObjMethodRsp.xml 1.3
+	EmbObjGetClass.xml 1.4
+	WBEMConfigurationDefaults.java 1.14
+	WBEMConfiguration.java 1.22
+	CIMXMLParserImpl.java 1.25
+	CIMXMLBuilderImpl.java 1.18
+	CIMClientXML_HelperImpl.java 1.26
+	EmbObjGetInstance.xml 1.5
+	Common.java 1.3
+	SAXSession.java 1.3
+	EmbObjHandler.java 1.5
+	TVPair.java 1.7
+	ParserTest.java 1.16
+	MethodCallChecker.java 1.2
+	EmbeddedObjParsingTest.java 1.7
+	CIMBuilder.java 1.14
+	MethodNode.java 1.4
+	AbstractParameterNode.java 1.4
+	WBEMConfigurationProperties.java 1.20
+	sblim-cim-client2.properties 1.4
+	NEWS 1.31
+
+Thu Dec 20 13:15:32 CET 2007	lupusalex
+
+	1820763 Supporting the EmbeddedInstance qualifier
+
+	EmbObjGetInstNegative2.xml 1.2
+	EmbObjGetClass.xml 1.3
+	EmbeddedObjParsingTest.java 1.6
+	EmbeddedObjBuildingTest.java 1.5
+	CIMBuilder.java 1.13
+	ParameterReferenceNode.java 1.3
+	ParameterRefArrayNode.java 1.4
+	ParameterNode.java 1.3
+	ParameterArrayNode.java 1.3
+	AbstractParameterNode.java 1.3
+	testcases.debug.txt 1.2
+	EmbObjHandler.java 1.4
+	CIMXMLBuilderImpl.java 1.17
+	NEWS 1.30
+	QualifiedNodeHandler.java 1.4
+	CIMXMLParserImpl.java 1.24
+
+Thu Dec 20 12:19:07 CET 2007	lupusalex
+
+	1815707 TLS support
+
+	WBEMConfigurationDefaults.java 1.13
+	WBEMConfiguration.java 1.21
+	HttpSocketFactory.java 1.11
+	sblim-cim-client2.properties 1.3
+	NEWS 1.29
+	WBEMConfigurationProperties.java 1.19
+
+Thu Dec 20 12:14:57 CET 2007	lupusalex
+
+	1796339 Serializable interface missing from internal componentry
+
+	CIMQualifiedElementInterfaceImpl.java 1.6
+	NEWS 1.28
+
+Thu Dec 20 11:59:44 CET 2007	lupusalex
+
+	1783288 CIMClass.isAssociation() not working for retrieved classes.
+
+	enumerateClasses.xml 1.6
+	EnumClasses.java 1.5
+	QualifiedNodeHandler.java 1.3
+	ClassNode.java 1.4
+	CIMXMLParserImpl.java 1.23
+	CIMQualifiedElementInterfaceImpl.java 1.5
+	CIMClass.java 1.13
+	NEWS 1.27
+
+Thu Dec 20 11:41:59 CET 2007	lupusalex
+
+	1741654 Header mismatch error on ModifyInstance
+
+	WBEMClientCIMXML.java 1.32
+	NEWS 1.26
+
+Thu Dec 20 11:09:52 CET 2007	lupusalex
+
+	1776114 Cannot derive instance of class CIM_IndicationSubscription
+
+	NEWS 1.25
+	testcases.cim.txt 1.5
+	CIMInstanceTest.java 1.2
+	CIMInstance.java 1.12
+
+Thu Dec 20 09:57:00 CET 2007	lupusalex
+
+	Fix headers
+
+	XMLHostStrTest.java 1.3
+	ValueTypeTest.java 1.3
+	TrailerTest.java 1.5
+	MethodRspChecker.java 1.3
+	CloseableIterator.java 1.4
+	Common.java 1.3
+	CIMParameterTest.java 1.3
+	CIMObjectPathTest.java 1.5
+	CIMMethodTest.java 1.3
+	CIMClassPropertyTest.java 1.3
+	CloseableIteratorSAX.java 1.9
+	CloseableIteratorPULL.java 1.13
+	CloseableIteratorDOM.java 1.12
+	MOF.java 1.11
+	TraceFormatter.java 1.5
+	TimeStamp.java 1.3
+	LogFormatter.java 1.6
+	ValueArrayNode.java 1.5
+	ReturnValueNode.java 1.7
+	QualifierNode.java 1.5
+	Node.java 1.6
+	NameSpacePathNode.java 1.5
+	KeyValueNode.java 1.6
+	InstancePathNode.java 1.5
+	HostNode.java 1.5
+	ClassPathNode.java 1.5
+	WBEMClientFactory.java 1.4
+	WBEMClient.java 1.5
+	RoleCredential.java 1.4
+	PasswordCredential.java 1.4
+	UnsignedInteger8.java 1.6
+	UnsignedInteger32.java 1.6
+	UnsignedInteger16.java 1.6
+	CIMScope.java 1.5
+	CIMQualifier.java 1.7
+	CIMProperty.java 1.9
+	CIMParameter.java 1.9
+	CIMObjectPath.java 1.15
+	CIMMethod.java 1.10
+	CIMFlavor.java 1.6
+	CIMElement.java 1.5
+	CIMClassProperty.java 1.10
+	CIMClass.java 1.12
+	DiscoverySample.java 1.4
+	URI.java 1.10
+	Authority.java 1.8
+	CIMObjectFactory.java 1.10
+	CIMElementSorter.java 1.6
+	unittest.html 1.5
+	Discoverer.java 1.4
+	AdvertisementCatalog.java 1.4
+
+Sat Sep 22 21:20:43 CEST 2007	krawalter
+
+	1769504	Type identification for VALUETYPE="numeric"
+
+	ValueTypeEnumInstanceNames.xml 1.2
+	ValueTypeTest.java 1.2
+	testcases.parser.txt 1.8
+	KeyValueNode.java 1.5
+	CIMXMLParserImpl.java 1.22
+	NEWS 1.24
+
+Release 2.0.3
+=============
+
+Fri Aug 17 13:46:25 CEST 2007	krawalter
+
+	1745282 Uniform time stamps for log files
+
+	TraceFormatter.java 1.4
+	TimeStamp.java 1.2
+	LogFormatter.java 1.5
+	NEWS 1.23
+
+Fri Jul 27 13:08:00 CEST 2007	krawalter
+
+	1729361 Multicast discovery is broken in DiscovererSLP
+
+	ParserTest.java 1.15
+	ReturnValueNode.java 1.6
+	NameSpacePathNode.java 1.4
+	InstancePathNode.java 1.4
+	HostNode.java 1.4
+	ClassPathNode.java 1.4
+	Discoverer.java 1.3
+	AdvertisementCatalog.java 1.3
+	MethodRspWithReference.xml 1.2
+	XMLHostStrTest.java 1.2
+	MethodRspChecker.java 1.2
+	testcases.parser.txt 1.7
+	DiscovererSLP.java 1.3
+	unittest.html 1.4
+	DiscoverySample.java 1.3
+	XMLHostStr.java 1.3
+
+Fri Jul 27 13:06:02 CEST 2007	krawalter
+
+	Updating NEWS file to reflect patches integrated into the HEAD branch a week ago.
+
+	NEWS 1.22
+
+Fri Jul 06 11:44:40 CEST 2007	krawalter
+
+	1737141 Sync up with JSR48 evolution
+
+	TrailerTest.java 1.4
+	CIMBuilder.java 1.12
+	Common.java 1.2
+	CIMParameterTest.java 1.2
+	CIMMethodTest.java 1.2
+	CIMClassPropertyTest.java 1.2
+	WBEMClientCIMXML.java 1.31
+	CloseableIteratorSAX.java 1.8
+	CloseableIteratorPULL.java 1.12
+	CloseableIteratorDOM.java 1.11
+	QualifierNode.java 1.4
+	CIMQualifiedElementInterfaceImpl.java 1.4
+	CIMElementSorter.java 1.5
+	RoleCredential.java 1.3
+	CIMQualifier.java 1.6
+	CIMProperty.java 1.8
+	CIMParameter.java 1.8
+	CIMObjectPath.java 1.14
+	CIMMethod.java 1.9
+	CIMElement.java 1.4
+	CIMClassProperty.java 1.9
+	testcases.cim.txt 1.4
+	CIMXMLParserImpl.java 1.21
+	CIMXMLBuilderImpl.java 1.16
+	WBEMClientFactory.java 1.3
+	WBEMClient.java 1.4
+	PasswordCredential.java 1.3
+	CloseableIterator.java 1.3
+	NEWS 1.21
+
+Thu Jul 05 16:44:23 CEST 2007	krawalter
+
+	1737123 Differences to JSR48 public review draft
+
+	UnsignedInteger8.java 1.5
+	UnsignedInteger32.java 1.5
+	UnsignedInteger16.java 1.5
+	CIMScope.java 1.4
+	CIMFlavor.java 1.5
+	CIMClassProperty.java 1.8
+	CIMClass.java 1.11
+	NEWS 1.20
+
+Thu Jul 05 16:12:28 CEST 2007	krawalter
+
+	1736318 Wrong object path in HTTP header
+
+	CIMObjectPathTest.java 1.4
+	WBEMClientCIMXML.java 1.30
+	MOF.java 1.10
+	NEWS 1.19
+
+Thu Jul 05 15:54:08 CEST 2007	krawalter
+
+	1735693 Empty VALUE.ARRAY elements are parsed as nulls
+
+	enumerateClasses.xml 1.5
+	EnumClasses.java 1.4
+	TVPair.java 1.6
+	ValueArrayNode.java 1.4
+	CIMObjectFactory.java 1.9
+	NEWS 1.18
+
+Thu Jul 05 15:33:16 CEST 2007	krawalter
+
+	1735614 Wrong ARRAYSIZE attribute handling in SAX/PULL
+
+	enumerateClasses.xml 1.4
+	EnumClasses.java 1.3
+	ParameterRefArrayNode.java 1.3
+	Node.java 1.5
+	NEWS 1.17
+
+Thu Jul 05 15:03:00 CEST 2007	krawalter
+
+	1734936 DiscovererSLPTest fails in some environments
+
+	DiscovererSLPTest.java 1.5
+	NEWS 1.16
+
+Thu Jul 05 14:46:42 CEST 2007	krawalter
+
+	1734888 Wrong reference building in METHODCALL request
+
+	TVPair.java 1.5
+	CIMClientXML_HelperImpl.java 1.25
+
+Thu Jul 05 14:27:43 CEST 2007	krawalter
+
+	1723607 IPv6 support in WBEM-URI strings
+
+	CIMObjectPathTest.java 1.3
+	URI.java 1.9
+	Authority.java 1.7
+	unittest.html 1.3
+	NEWS 1.15
+
+Release 2.0.2
+=============
+Fri May 25 11:01:03 CEST 2007	lupusalex
+
+	Documentation updates
+
+	bestpractise.html 1.3
+
+Tue May 22 17:58:33 CEST 2007	lupusalex
+
+	1720707 Conventional Node factory for CIM-XML SAX parser 1719991 FVT: regression ClassCastException in EmbObjHandler 1712656 Correct type identification for SVC CIMOM
+
+	TrailerTest.java 1.3
+	TVPair.java 1.4
+	SVCTest.java 1.2
+	ParserTest.java 1.14
+	ModifyInstanceTest.java 1.3
+	EmbeddedObjParsingTest.java 1.5
+	EmbeddedObjBuildingTest.java 1.4
+	Common.java 1.2
+	CIMBuilder.java 1.11
+	ValueReferenceNode.java 1.3
+	SimpleReqNode.java 1.4
+	PropertyArrayNode.java 1.5
+	ParameterNode.java 1.2
+	Node.java 1.4
+	NameSpacePathNode.java 1.3
+	ErrorNode.java 1.3
+	ClassNode.java 1.3
+	AbstractArrayValueNode.java 1.2
+	ValueObjectWithPathNode.java 1.3
+	ValueNullNode.java 1.3
+	SimpleRspNode.java 1.3
+	ParameterArrayNode.java 1.2
+	AbstractValueNode.java 1.2
+	ResponseDestinationNode.java 1.3
+	MultiReqNode.java 1.3
+	MethodNode.java 1.3
+	LocalNameSpacePathNode.java 1.4
+	InstanceNode.java 1.3
+	IReturnValueNode.java 1.3
+	ClassPathNode.java 1.3
+	CIMNode.java 1.3
+	ValueRefArrayNode.java 1.3
+	ValueObjectWithLocalPathNode.java 1.3
+	ReturnValueNode.java 1.5
+	QualiDeclNode.java 1.3
+	PropertyReferenceNode.java 1.5
+	MultiRspNode.java 1.3
+	LocalInstancePathNode.java 1.3
+	LocalClassPathNode.java 1.4
+	KeyValueNode.java 1.4
+	InstancePathNode.java 1.3
+	ExpParamValueNode.java 1.3
+	ClassNameNode.java 1.3
+	AbstractScalarValueNode.java 1.2
+	ValueNamedInstanceNode.java 1.3
+	ParameterReferenceNode.java 1.2
+	ParamValueNode.java 1.4
+	IParamValueNode.java 1.4
+	ValueObjectNode.java 1.4
+	ValueNode.java 1.4
+	ValueArrayNode.java 1.3
+	SimpleReqAckNode.java 1.3
+	SimpleExpReqNode.java 1.3
+	ScopeNode.java 1.3
+	PropertyNode.java 1.5
+	NameSpaceNode.java 1.3
+	MultiExpReqNode.java 1.3
+	MessageNode.java 1.3
+	KeyBindingNode.java 1.3
+	IMethodCallNode.java 1.4
+	HostNode.java 1.3
+	ExpMethodResponseNode.java 1.3
+	ExpMethodCallNode.java 1.3
+	QualifierNode.java 1.3
+	MethodCallNode.java 1.4
+	InstanceNameNode.java 1.3
+	IMethodResponseNode.java 1.3
+	SVCMethodRsp.xml 1.2
+	SVCMethodRsp.smpl0.xml 1.2
+	SVCGetClass.xml 1.2
+	SVCEnumQualiTypes.xml 1.2
+	SimpleExpRspNode.java 1.3
+	ParameterRefArrayNode.java 1.2
+	ObjectPathNode.java 1.3
+	MultiExpRspNode.java 1.3
+	MethodResponseNode.java 1.3
+	XMLDefaultHandlerImpl.java 1.3
+	NodeFactory.java 1.2
+	NodeConstIf.java 1.2
+	EmbObjHandler.java 1.3
+	CIMClientXML_HelperImpl.java 1.24
+	CIMXMLParserImpl.java 1.20
+	CIMXMLBuilderImpl.java 1.15
+	testcases.parser.txt 1.6
+	unittest.html 1.2
+	NEWS 1.14
+
+Thu May 17 16:02:55 CEST 2007	ebak
+
+	file NodeConstIf.java was initially added on branch Experimental.
+
+	NodeConstIf.java 1.1
+
+Wed May 16 15:09:45 CEST 2007	ebak
+
+	file SVCMethodRsp.smpl0.xml was initially added on branch Experimental.
+
+	SVCMethodRsp.smpl0.xml 1.1
+
+Wed May 16 13:54:56 CEST 2007	lupusalex
+
+	Documentation updates
+
+	bestpractise.html 1.2
+
+Wed May 16 12:55:53 CEST 2007	lupusalex
+
+	Documentation updates
+
+	embedded.html 1.1
+	AdvertisementCatalogTest.java 1.4
+	overview.html 1.14
+	unittest.html 1.1
+	bestpractise.html 1.1
+
+Wed May 16 11:38:20 CEST 2007	lupusalex
+
+	Documentation updates
+
+	WBEMConfigurationTest.java 1.6
+	HttpHeaderTest.java 1.3
+	WBEMServiceAdvertisementSLPTest.java 1.3
+	DiscovererSLPTest.java 1.4
+	AdvertisementCatalogTest.java 1.3
+
+Mon May 14 16:00:05 CEST 2007	lupusalex
+
+	Build file cosmetics
+
+	build.xml 1.30
+
+Fri May 11 13:20:06 CEST 2007	lupusalex
+
+	Documentation updates
+
+	logging.html 1.3
+
+Fri May 11 13:13:56 CEST 2007	lupusalex
+
+	Build file cosmetics
+
+	build.xml 1.29
+
+Fri May 11 13:09:57 CEST 2007	lupusalex
+
+	1716502 Adding inclusion feature to the test framework
+
+	testcases.txt 1.14
+	TestSuite.java 1.8
+
+Fri May 11 13:02:50 CEST 2007	lupusalex
+
+	1716991 FVT: CIMObjectPath.equals() should ignore host name
+
+	testcases.cim.txt 1.3
+	CIMObjectPathTest.java 1.2
+	CIMObjectPath.java 1.13
+
+Fri May 11 13:02:28 CEST 2007	lupusalex
+
+	file CIMObjectPathTest.java was initially added on branch Experimental.
+
+	CIMObjectPathTest.java 1.1
+
+Thu May 10 11:30:18 CEST 2007	lupusalex
+
+	1715482 FVT: CIM_ERR_FAILED thrown when access denied
+
+	WBEMClientCIMXML.java 1.29
+	WBEMTransportException.java 1.4
+	WBEMAuthenticationException.java 1.3
+	WBEMException.java 1.4
+
+Wed May 09 16:34:50 CEST 2007	lupusalex
+
+	1715612 FVT: Status 0 in trailer is parsed as error
+
+	HttpHeaderTest.java 1.2
+	HttpHeader.java 1.5
+	NEWS 1.13
+
+Wed May 09 16:33:14 CEST 2007	lupusalex
+
+	1715511 FVT: Wrong HTTP header values
+
+	HttpClient.java 1.16
+	NEWS 1.12
+
+Wed May 09 16:31:46 CEST 2007	lupusalex
+
+	1715027 FVT: Make message id random
+
+	CimXmlSerializerTest.java 1.4
+	CIMClientXML_HelperImpl.java 1.23
+	NEWS 1.11
+
+Wed May 09 16:29:56 CEST 2007	lupusalex
+
+	 1714902 FVT: Threading related weak spots
+
+	WBEMConfigurationTest.java 1.5
+	WBEMConfiguration.java 1.20
+	HttpClientPool.java 1.7
+	build.xml 1.28
+	NEWS 1.10
+	WBEMClientCIMXML.java 1.28
+
+Wed May 09 16:24:58 CEST 2007	lupusalex
+
+	1714853 FVT: Inexplicit error when operation is invoked on closed client
+
+	NEWS 1.9
+	WBEMClientCIMXML.java 1.27
+
+Wed May 09 16:16:27 CEST 2007	lupusalex
+
+	1714878 FVT: Empty string property values are parsed as nulls
+
+	TVPair.java 1.3
+	ParserTest.java 1.13
+	CIMBuilder.java 1.10
+	ValueNode.java 1.3
+	PropertyReferenceNode.java 1.4
+	PropertyNode.java 1.4
+	PropertyArrayNode.java 1.4
+	KeyValueNode.java 1.3
+	AbstractPropertyNode.java 1.4
+	CIMXMLParserImpl.java 1.19
+	EmbObjGetInstance.xml 1.4
+	NEWS 1.8
+
+Wed May 09 15:50:58 CEST 2007	lupusalex
+
+	1711092 Some fixes/additions of log&trace messages
+
+	messages_en.properties 1.14
+	messages_de.properties 1.14
+	Messages.java 1.14
+	LogAndTraceBroker.java 1.11
+	HttpSocketFactory.java 1.10
+	TraceListener.java 1.3
+
+Wed May 09 15:49:45 CEST 2007	lupusalex
+
+	1715053 FVT: No forced retry on HTTP 501/510
+
+	WBEMClientCIMXML.java 1.26
+
+Wed May 09 13:33:33 CEST 2007	lupusalex
+
+	file HttpHeaderTest.java was initially added on branch Experimental.
+
+	HttpHeaderTest.java 1.1
+
+Tue May 08 12:50:51 CEST 2007	lupusalex
+
+	1714184  FVT: NPE on WBEMClientCIMXML.init()
+
+	WBEMClientCIMXML.java 1.25
+
+Mon May 07 14:27:29 CEST 2007	lupusalex
+
+	1708584 CloseableIterator might not clean up streams
+
+	CloseableIteratorTest.java 1.2
+	CloseableIteratorSAX.java 1.7
+	CloseableIteratorPULL.java 1.11
+	CloseableIteratorDOM.java 1.10
+	testcases.txt 1.13
+	testcases.parser.txt 1.5
+	XMLPullParser.java 1.9
+
+Mon May 07 14:18:44 CEST 2007	lupusalex
+
+	1686000 modifyInstance() missing from WBEMClient
+
+	ReturnValueNode.java 1.4
+	AbstractMethodCallNode.java 1.4
+
+Mon May 07 13:56:18 CEST 2007	lupusalex
+
+	1686000 modifyInstance() missing from WBEMClient
+
+	ModifyInstanceTest.java 1.2
+	EmbeddedObjBuildingTest.java 1.3
+	CIMBuilder.java 1.9
+	testcases.txt 1.12
+	testcases.parser.txt 1.4
+	WBEMClientCIMXML.java 1.24
+	SimpleReqNode.java 1.3
+	MethodCallNode.java 1.3
+	LocalNameSpacePathNode.java 1.3
+	LocalClassPathNode.java 1.3
+	IParamValueNode.java 1.3
+	IMethodCallNode.java 1.3
+	AbstractParamValueNode.java 1.2
+	AbstractMethodCallNode.java 1.3
+	WBEMClient.java 1.3
+
+Mon May 07 13:47:59 CEST 2007	lupusalex
+
+	1688273 Full support of HTTP trailers
+
+	TrailerTest.java 1.2
+	ParserTest.java 1.12
+	EmbeddedObjParsingTest.java 1.4
+	trailer.bin.gz 1.2
+	testcases.txt 1.11
+	testcases.parser.txt 1.3
+	WBEMClientCIMXML.java 1.23
+	CloseableIteratorSAX.java 1.6
+	CloseableIteratorPULL.java 1.10
+	CloseableIteratorDOM.java 1.9
+	WBEMConstants.java 1.10
+	WBEMConfigurationDefaults.java 1.12
+	WBEMConfiguration.java 1.19
+	TrailerException.java 1.2
+	ChunkedInputStream.java 1.5
+	HttpHeader.java 1.4
+	HttpClient.java 1.15
+	WBEMConfigurationProperties.java 1.18
+	SAXHelper.java 1.3
+	sblim-cim-client2.properties 1.2
+
+Mon May 07 13:17:51 CEST 2007	lupusalex
+
+	1689085 Embedded object enhancements for Pegasus
+
+	CIMXMLParserImpl.java 1.18
+
+Fri May 04 14:43:29 CEST 2007	ebak
+
+	file Common.java was initially added on branch Experimental.
+
+	Common.java 1.1
+
+Thu May 03 09:30:34 CEST 2007	lupusalex
+
+	1678915 Integrated WBEM service discovery via SLP
+
+	DiscovererSLPTest.java 1.3
+
+Thu May 03 08:28:11 CEST 2007	lupusalex
+
+	1702832 WBEMClientCIMXL.setCustomSocketFactory() not implemented
+
+	WBEMConfigurationTest.java 1.4
+	testcases.txt 1.10
+	HttpClientTest.java 1.2
+	WBEMClientCIMXML.java 1.22
+	WBEMConfiguration.java 1.18
+	configuration.html 1.6
+	HttpClient.java 1.14
+
+Mon Apr 30 17:40:52 CEST 2007	lupusalex
+
+	1710066 LocalAuth fails for z/OS Pegasus
+
+	WBEMConstants.java 1.9
+	PegasusLocalAuthInfo.java 1.6
+	NEWS 1.7
+
+Mon Apr 30 11:38:54 CEST 2007	lupusalex
+
+	1669961 CIMTypedElement.getType() =>getDataType()
+
+	MOF.java 1.9
+	CIMXMLParserImpl.java 1.17
+	CIMXMLBuilderImpl.java 1.14
+	CIMClientXML_HelperImpl.java 1.22
+	CIMInstanceBuilder.java 1.7
+	CIMValuedElement.java 1.7
+	CIMTypedElement.java 1.7
+	CIMObjectPath.java 1.12
+	CIMInstance.java 1.11
+	CIMClassProperty.java 1.7
+	CIMClass.java 1.10
+	Jsr48CimSample.java 1.3
+	NEWS 1.6
+
+Mon Apr 30 11:17:52 CEST 2007	lupusalex
+
+	1669225 Ctor CIMDataType(int) shall be private
+
+	CIMDataType.java 1.7
+	NEWS 1.5
+
+Mon Apr 30 11:13:10 CEST 2007	lupusalex
+
+	1689085 Embedded object enhancements for Pegasus
+
+	ReturnValue.SVC.xml 1.2
+	EmbObjGetInstance.xml 1.3
+	EmbObjGetInstNegative.xml 1.2
+	ParserTest.java 1.11
+	EmbeddedObjParsingTest.java 1.3
+	ReturnValueNode.java 1.3
+	PropertyReferenceNode.java 1.3
+	PropertyNode.java 1.3
+	PropertyArrayNode.java 1.3
+	ParamValueNode.java 1.3
+	Node.java 1.3
+	AbstractPropertyNode.java 1.3
+	EmbObjHandler.java 1.2
+	CIMObjectFactory.java 1.8
+	CIMXMLParserImpl.java 1.16
+	CIMXMLBuilderImpl.java 1.13
+	CIMClientXML_HelperImpl.java 1.21
+	NEWS 1.4
+
+Mon Apr 30 10:54:20 CEST 2007	lupusalex
+
+	1678915 Integrated WBEM service discovery via SLP
+
+	NEWS 1.3
+
+Mon Apr 30 10:42:57 CEST 2007	lupusalex
+
+	1678915 Integrated WBEM service discovery via SLP
+
+	WBEMServiceAdvertisementSLPTest.java 1.2
+	ServiceTable.java 1.3
+	ServiceRepository.java 1.3
+	ServiceLocationEnumeratorStreamed.java 1.3
+	SLPStreamServer.java 1.3
+	SLPServer.java 1.3
+	SLPRequestHandler.java 1.3
+	SLPHeaderV2.java 1.3
+	SLPDatagramServer.java 1.3
+	MessageDispatcher.java 1.3
+	testcases.txt 1.9
+	DiscovererSLPTest.java 1.2
+	AdvertisementCatalogTest.java 1.2
+	TestCase.java 1.8
+	ServiceLocationAttribute.java 1.3
+	package.html 1.2
+	WBEMServiceAdvertisementSLP.java 1.2
+	DiscovererSLP.java 1.2
+	package.html 1.2
+	package.html 1.2
+	WBEMServiceAdvertisement.java 1.2
+	WBEMProtocol.java 1.2
+	DiscovererFactory.java 1.2
+	Discoverer.java 1.2
+	AdvertisementCatalog.java 1.2
+	DiscoverySample.java 1.2
+	overview.html 1.13
+	discovery.html 1.2
+
+Fri Apr 27 12:44:26 CEST 2007	ebak
+
+	file CloseableIteratorTest.java was initially added on branch Experimental.
+
+	CloseableIteratorTest.java 1.1
+
+Tue Apr 24 10:14:50 CEST 2007	ebak
+
+	file ReturnValue.SVC.xml was initially added on branch Experimental.
+
+	ReturnValue.SVC.xml 1.1
+
+Sat Apr 21 16:08:07 CEST 2007	ebak
+
+	file ModifyInstanceTest.java was initially added on branch Experimental.
+
+	ModifyInstanceTest.java 1.1
+
+Thu Apr 19 16:44:55 CEST 2007	lupusalex
+
+	Documentation update
+
+	Jsr48OperationSample.java 1.3
+
+Wed Apr 18 17:45:22 CEST 2007	lupusalex
+
+	file HttpClientTest.java was initially added on branch Experimental.
+
+	HttpClientTest.java 1.1
+
+Tue Apr 17 17:32:24 CEST 2007	ebak
+
+	file trailer.bin.gz was initially added on branch Experimental.
+
+	trailer.bin.gz 1.1
+
+Tue Apr 17 17:32:10 CEST 2007	ebak
+
+	file TrailerException.java was initially added on branch Experimental.
+
+	TrailerException.java 1.1
+
+Tue Apr 17 17:31:47 CEST 2007	ebak
+
+	file TrailerTest.java was initially added on branch Experimental.
+
+	TrailerTest.java 1.1
+
+Mon Apr 16 10:56:59 CEST 2007	lupusalex
+
+	file discovery.html was initially added on branch Experimental.
+
+	discovery.html 1.1
+
+Mon Apr 16 10:56:57 CEST 2007	lupusalex
+
+	file DiscovererSLP.java was initially added on branch Experimental.
+
+	DiscovererSLP.java 1.1
+
+Mon Apr 16 10:56:56 CEST 2007	lupusalex
+
+	file WBEMServiceAdvertisementSLP.java was initially added on branch Experimental.
+
+	WBEMServiceAdvertisementSLP.java 1.1
+
+Mon Apr 16 10:56:53 CEST 2007	lupusalex
+
+	file DiscovererSLPTest.java was initially added on branch Experimental.
+
+	DiscovererSLPTest.java 1.1
+
+Mon Apr 16 10:56:52 CEST 2007	lupusalex
+
+	file WBEMServiceAdvertisementSLPTest.java was initially added on branch Experimental.
+
+	WBEMServiceAdvertisementSLPTest.java 1.1
+
+Mon Apr 16 10:56:51 CEST 2007	lupusalex
+
+	file DiscoverySample.java was initially added on branch Experimental.
+
+	DiscoverySample.java 1.1
+
+Mon Apr 16 10:56:49 CEST 2007	lupusalex
+
+	file DiscovererFactory.java was initially added on branch Experimental.
+
+	DiscovererFactory.java 1.1
+
+Mon Apr 16 10:56:48 CEST 2007	lupusalex
+
+	file WBEMServiceAdvertisement.java was initially added on branch Experimental.
+
+	WBEMServiceAdvertisement.java 1.1
+
+Thu Apr 12 19:07:13 CEST 2007	ebak
+
+	file EmbObjGetInstNegative.xml was initially added on branch Experimental.
+
+	EmbObjGetInstNegative.xml 1.1
+
+Thu Apr 12 19:07:12 CEST 2007	ebak
+
+	file EmbObjHandler.java was initially added on branch Experimental.
+
+	EmbObjHandler.java 1.1
+
+Thu Apr 12 09:32:57 CEST 2007	lupusalex
+
+	1686977 Change package structure
+
+	build.xml 1.27
+
+Wed Apr 11 13:22:43 CEST 2007	lupusalex
+
+	1678807 Minor CIMDateTime suggestions
+
+	testcases.txt 1.8
+	testcases.cim.txt 1.2
+	CIMDateTimeIntervalTest.java 1.2
+	CIMDateTimeAbsoluteTest.java 1.2
+	CIMDateTimeInterval.java 1.6
+	CIMDateTimeAbsolute.java 1.8
+	DTStringWriter.java 1.3
+	DTStringReader.java 1.3
+
+Wed Apr 11 13:14:32 CEST 2007	lupusalex
+
+	1686977 Change package structure 1679620 Ant build fails with javadoc error
+
+	build.xml 1.26
+
+Wed Apr 11 13:07:11 CEST 2007	lupusalex
+
+	1679534 wrong ValueObjectNode.testChild()
+
+	ValueObjectNode.java 1.3
+
+Wed Apr 11 12:58:55 CEST 2007	lupusalex
+
+	1698278 Unit tests fail on Hungarian locale
+
+	LogAndTraceBrokerTest.java 1.4
+
+Fri Mar 23 21:39:39 CET 2007	lupusalex
+
+	1663270 Minor performance problems 1660756 Embedded object support
+
+	QualifiedNodeHandler.java 1.2
+	ClassNode.java 1.2
+	ValueReferenceNode.java 1.2
+	PropertyArrayNode.java 1.2
+	NameSpacePathNode.java 1.2
+	ErrorNode.java 1.2
+	ValueObjectWithPathNode.java 1.2
+	ValueNullNode.java 1.2
+	SimpleReqNode.java 1.2
+	Node.java 1.2
+	SimpleRspNode.java 1.2
+	LocalNameSpacePathNode.java 1.2
+	InstanceNode.java 1.2
+	ClassPathNode.java 1.2
+	IReturnValueNode.java 1.2
+	CIMNode.java 1.2
+	AbstractMessageNode.java 1.2
+	MethodNode.java 1.2
+	ResponseDestinationNode.java 1.2
+	PropertyReferenceNode.java 1.2
+	MultiReqNode.java 1.2
+	ValueRefArrayNode.java 1.2
+	KeyValueNode.java 1.2
+	ReturnValueNode.java 1.2
+	MultiRspNode.java 1.2
+	LocalClassPathNode.java 1.2
+	ExpParamValueNode.java 1.2
+	AbstractMultiRspNode.java 1.2
+	ClassNameNode.java 1.2
+	ValueObjectWithLocalPathNode.java 1.2
+	QualiDeclNode.java 1.2
+	InstancePathNode.java 1.2
+	ValueNamedInstanceNode.java 1.2
+	LocalInstancePathNode.java 1.2
+	AbstractParameterNode.java 1.2
+	AbstractObjectNode.java 1.2
+	ValueObjectNode.java 1.2
+	ParamValueNode.java 1.2
+	IParamValueNode.java 1.2
+	KeyBindingNode.java 1.2
+	ValueNode.java 1.2
+	ValueArrayNode.java 1.2
+	ScopeNode.java 1.2
+	HostNode.java 1.2
+	MultiExpReqNode.java 1.2
+	NameSpaceNode.java 1.2
+	ExpMethodCallNode.java 1.2
+	SimpleExpReqNode.java 1.2
+	PropertyNode.java 1.2
+	ExpMethodResponseNode.java 1.2
+	AbstractPropertyNode.java 1.2
+	NonVolatileIf.java 1.2
+	SimpleReqAckNode.java 1.2
+	MessageNode.java 1.2
+	IMethodCallNode.java 1.2
+	QualifierNode.java 1.2
+	MethodCallNode.java 1.2
+	InstanceNameNode.java 1.2
+	IMethodResponseNode.java 1.2
+	AbstractMethodCallNode.java 1.2
+	MultiExpRspNode.java 1.2
+	MethodResponseNode.java 1.2
+	SimpleExpRspNode.java 1.2
+	ObjectPathNode.java 1.2
+	CIMXMLBuilderImpl.java 1.12
+	CIMClientXML_HelperImpl.java 1.20
+	testcases.txt 1.7
+	CIMXMLParserImpl.java 1.15
+	testcases.parser.txt 1.2
+	NodePool.java 1.2
+	XMLDefaultHandlerImpl.java 1.2
+	CIMObjectFactory.java 1.7
+	EmbObjGetInstance.xml 1.2
+	SAXSession.java 1.2
+	SAXHelper.java 1.2
+	EmbObjGetClass.xml 1.2
+	EmbObjMethodRsp.xml 1.2
+	XMLPullParser.java 1.8
+	MOF.java 1.8
+	CIMParameter.java 1.7
+	CIMMethod.java 1.8
+	CIMDataType.java 1.6
+	CIMClassProperty.java 1.6
+	ParserTest.java 1.10
+	CIMBuilder.java 1.8
+	EmbeddedObjBuildingTest.java 1.2
+	EmbeddedObjParsingTest.java 1.2
+	CIMQualifiedElementInterfaceImpl.java 1.3
+	CIMElementSorter.java 1.4
+	overview.html 1.12
+
+Fri Mar 23 21:35:49 CET 2007	lupusalex
+
+	1671502 Remove dependency from Xerces
+
+	CimXmlSerializerTest.java 1.3
+
+Fri Mar 23 21:22:47 CET 2007	lupusalex
+
+	1671502 Remove dependency from Xerces
+
+	CimXmlSerializer.java 1.3
+
+Fri Mar 23 21:06:28 CET 2007	lupusalex
+
+	1671502 Remove dependency from Xerces
+
+	CimXmlSerializer.java 1.2
+	CIMClientXML_HelperImpl.java 1.19
+	testcases.txt 1.6
+	sblim-cim-client2.spec 1.3
+	CimXmlSerializerTest.java 1.2
+	overview.html 1.11
+	WBEMConstants.java 1.8
+
+Tue Mar 20 13:26:51 CET 2007	ebak
+
+	file CIMDateTimeAbsoluteTest.java was initially added on branch Experimental.
+
+	CIMDateTimeAbsoluteTest.java 1.1
+
+Tue Mar 20 13:26:50 CET 2007	ebak
+
+	file CIMDateTimeIntervalTest.java was initially added on branch Experimental.
+
+	CIMDateTimeIntervalTest.java 1.1
+
+Tue Mar 20 13:26:49 CET 2007	ebak
+
+	file testcases.cim.txt was initially added on branch Experimental.
+
+	testcases.cim.txt 1.1
+
+Mon Mar 19 09:38:06 CET 2007	lupusalex
+
+	1679620 Ant build fails with javadoc error
+
+	build.xml 1.25
+
+Thu Mar 08 08:34:35 CET 2007	lupusalex
+
+	1660743 SSLContext is static
+
+	HttpSocketFactory.java 1.9
+	HttpServerConnection.java 1.8
+	HttpClientPool.java 1.6
+	HttpClient.java 1.13
+	testcases.txt 1.5
+	SSLConfigurationTest.java 1.2
+	TestSuite.java 1.7
+	TestCase.java 1.7
+	overview.html 1.10
+	build.xml 1.24
+	stranger.pks 1.2
+	truststore.pks 1.2
+	notrust.pks 1.2
+	keystore.pks 1.2
+	SSLConfigurationTest.java 1.3
+
+Fri Mar 02 19:42:22 CET 2007	ebak
+
+	file EmbeddedObjBuildingTest.java was initially added on branch Experimental.
+
+	EmbeddedObjBuildingTest.java 1.1
+
+Thu Mar 01 17:34:21 CET 2007	lupusalex
+
+	1660575 Chunking broken on SUN JRE (*)
+
+	ChunkedInputStream.java 1.4
+
+Thu Mar 01 17:23:30 CET 2007	lupusalex
+
+	1656285 IndicationHandler does not accept non-Integer message ID
+
+	CIMXMLBuilderImpl.java 1.11
+	CIMIndicationHandler.java 1.11

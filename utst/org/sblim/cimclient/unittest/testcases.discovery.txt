@@ -1,0 +1,3 @@
+discovery.DiscovererSLPTest
+discovery.WBEMServiceAdvertisementSLPTest
+discovery.AdvertisementCatalogTest

@@ -1,0 +1,14 @@
+wbem.CloseableIteratorTest
+wbem.ParserTest
+wbem.EmbeddedObjParsingTest
+wbem.EmbeddedObjBuildingTest
+wbem.TrailerTest
+wbem.ModifyInstanceTest
+wbem.SVCTest
+wbem.XMLHostStrTest
+wbem.ValueTypeTest
+wbem.Bug3466280Test
+wbem.Bug3598613Test
+wbem.NestedEmbInstTest
+wbem.IReturnValueTest
+wbem.DSP0201Test

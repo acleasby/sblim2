@@ -1,0 +1,3 @@
+slp.SLPTest
+slp.ServiceURLTest
+! testcases.slp.internal.txt

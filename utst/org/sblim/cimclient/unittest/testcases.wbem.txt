@@ -1,0 +1,2 @@
+wbem.WBEMClientTest
+wbem.WBEMListenerTest
